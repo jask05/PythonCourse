@@ -4,11 +4,12 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 
 ## Vistos
 
-1. Curso Python. Vídeo 1
-2. Curso Python. Introducción. Vídeo 2
-3. Curso Python. Sintaxis Básica I. Vídeo 3
-4. Curso Python. Sintaxis Básica II Tipos, operadores y variables. Vídeo 4
-5. Curso Python. Sintaxis Básica III Funciones I. Vídeo 5
+1. Curso Python. [Vídeo 1](https://www.youtube.com/watch?v=G2FCfQj-9ig&index=1&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS)
+2. Curso Python. Introducción. [Vídeo 2](https://www.youtube.com/watch?v=9ojhJsXNWCI&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=2)
+3. Curso Python. Sintaxis Básica I. [Vídeo 3](https://www.youtube.com/watch?v=yppT6GPZMyo&index=3&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS)
+4. Curso Python. Sintaxis Básica II Tipos, operadores y variables. [Vídeo 4](https://www.youtube.com/watch?v=u4I9PqhqCo8&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=4)
+5. Curso Python. Sintaxis Básica III Funciones I. [Vídeo 5](https://www.youtube.com/watch?v=VY448UWAQ_0&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=5)
+6. Curso Python. Sintaxis Básica IV Funciones II. [Vídeo 6](https://www.youtube.com/watch?v=vawEHhV_HFA)
 
 # Apuntes
 
@@ -89,3 +90,24 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
     type(coma)
     <class 'float'>
     ```
+
+## Video 5 - Sintaxis Básica III Funciones I
+
+- **Funciones**
+    - **Qué son?** 
+        - Una o varias líneas de código agrupadas de forma que funcionan como una unidad realizando una tarea específica.
+        - Pueden devolver valores.
+        - Pueden tener parámetros/argumentos.
+        - Se les llama "métodos" cuando se encuentran definidas dentro de una clase.
+    - **Utilidad**
+        - Reutilización de código.
+    - **Sintáxis**
+        ```python
+        def nombre_funcion(parametro) # parámetro opcional
+            # instrucción de la función
+            return # opcional
+
+        # Ejecución
+        nombre_funcion(parametro)
+        ```
+    - 
