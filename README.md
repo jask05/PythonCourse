@@ -10,6 +10,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 4. Curso Python. Sintaxis Básica II Tipos, operadores y variables. [Vídeo 4](https://www.youtube.com/watch?v=u4I9PqhqCo8&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=4)
 5. Curso Python. Sintaxis Básica III Funciones I. [Vídeo 5](https://www.youtube.com/watch?v=VY448UWAQ_0&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=5)
 6. Curso Python. Sintaxis Básica IV Funciones II. [Vídeo 6](https://www.youtube.com/watch?v=vawEHhV_HFA)
+7. Curso Python. Sintaxis Básica V. Las listas. [Vídeo 7](https://www.youtube.com/watch?v=Q8hugySbLQQ)
+8. Curso Python. Sintaxis Básica VI. Las tuplas. [Vídeo 8](https://www.youtube.com/watch?v=Ufqh8aoR9hE)
 
 # Apuntes
 
@@ -110,4 +112,67 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
         # Ejecución
         nombre_funcion(parametro)
         ```
-    - 
+## Vídeo 6 - Sintaxis Básica IV Funciones II
+
+- **Funciones**
+    - Parámetros separados por coma.
+    - Pueden tener de 0 a n.
+    - Pueden devolver valor con **return**.
+
+## Vídeo 7 - Sintaxis Básica V. Las listas.
+- **Listas**
+    - Equivalente a arrays/vectores.
+    - Permite almacenar en la memoria del ordenador varios valores.
+    - Variable = cajón // Lista = estantería (simil)
+    - Permiten guardar diferentes tipos de valores.
+    - Se pueden expandir dinámicamente.
+    - Índice: posición dentro de la lista. Empieza por **0**.
+    
+    ```python
+    nombreLista = [e1, e2, e3 ...]
+
+    # Muestra toda la lista
+    lista[:]
+
+    # Tercer elemento (empieza en 0)
+    lista[2]
+
+    # De atrás hacia delante
+    lista[-3]
+
+    # Los tres primeros
+    lista[0:3] # El uĺtimo nº es exclusión.
+
+    # Acceso a los dos últimos elementos
+    lista[2:]
+
+    # Añadir elementos al final de la lista
+    lista.append("Luis")
+
+    # Añadir elemento al comienzo de la lista
+    # Primer parámetro: posición donde añadirlo.
+    lista.insert(0,"Mariano")
+
+    # Añadir varios elementos a la vez
+    lista.extend(["ele1", "ele2", "ele3"])
+
+    # Índice de donde está un elemento
+    lista.index("ele1")
+
+    # Devuelve True/False si el elemento se encuentra o no en la lista
+    print("elemento" in lista)
+
+    # Eliminar elementos
+    lista.remove("elemento")
+
+    # Elimina último elemento añadido a la lista
+    lista.pop()
+
+    # Sumar listas diferentes
+    lista = ["ele1", "ele2", "ele3"]
+    lista2 = ["ulu1", "ulu2", "ulu3"]
+    lista3 = lista + lista2
+
+    # Repite la lista X veces
+    lista = ["ele1", "ele2", "ele3"] * 3
+    ```
