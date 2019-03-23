@@ -12,6 +12,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 6. Curso Python. Sintaxis Básica IV Funciones II. [Vídeo 6](https://www.youtube.com/watch?v=vawEHhV_HFA)
 7. Curso Python. Sintaxis Básica V. Las listas. [Vídeo 7](https://www.youtube.com/watch?v=Q8hugySbLQQ)
 8. Curso Python. Sintaxis Básica VI. Las tuplas. [Vídeo 8](https://www.youtube.com/watch?v=Ufqh8aoR9hE)
+9. Curso Python. Sintaxis Básica VII Los diccionarios. [Vídeo 9](https://www.youtube.com/watch?v=2OmgHl8lp0I)
+
 
 # Apuntes
 
@@ -176,3 +178,48 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
     # Repite la lista X veces
     lista = ["ele1", "ele2", "ele3"] * 3
     ```
+
+## Video 8 - Sintaxis Básica VI. Las tuplas.
+- **Tuplas**
+    - Listas inmutables (ni añadir, ni eliminar, ni modificar elementos).
+    - Permiten extraer porciones, pero el resultado es una tupla nueva.
+    - ~~No permiten utilizar búsquedas (index).~~ A partir de Python 2.6 se puede utilizar el método _index_ en las tuplas.
+    - Se puede comprobar si un elemento se encuentra dentro de la tupla.
+    - Utilidad:
+        - Más rápida a la hora de ejecutarse.
+        - Menos espacio (mayor optimización).
+        - Formatean cadenas (strings).
+        - Se pueden utilizar de claves en un diccionario (las listas no).
+
+        ```python
+        tupla = ("e1", "e2", "e3")
+        # Los parámetros son opcionales, pero es recomendable ponerlos.
+
+        # Acceso
+        tupla[0]
+
+        # Convierte tupla en lista
+        lista = list(tupla)
+
+        # Convierte lista en tupla
+        tupla = tuple(lista)
+
+        # Contar cuántos elementos se encuentran dentro de una tupla
+        tupla.count(13)
+
+        # Averiguar longitud de la tupla
+        len(tupla)
+
+        # Tuplas unitarias: con un único elemento.
+        tupla = ("elemento", )
+
+        # Empaquetado de tupla. (Tuplas sin paréntesis)
+        tupla = "e1", "e2", "e3"
+
+        # Desempaquetado de tupla.
+        # Permite asignar todos los elementos que forman parte de una tupla a diferentes variables
+        tupla = ("Juan", 13, 1, 1955)
+        nombre, dia, mes, anio = tupla
+        ```
+
+# Video 9 - Sintaxis Básica VII Los diccionarios.
