@@ -14,6 +14,9 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 8. Curso Python. Sintaxis Básica VI. Las tuplas. [Vídeo 8](https://www.youtube.com/watch?v=Ufqh8aoR9hE)
 9. Curso Python. Sintaxis Básica VII Los diccionarios. [Vídeo 9](https://www.youtube.com/watch?v=2OmgHl8lp0I)
 10. Curso Python. Condicionales I. [Vídeo 10](https://www.youtube.com/watch?v=iV-4F0jGWak)
+11. Curso Python. Condicionales II. [Vídeo 11](https://www.youtube.com/watch?v=cf7o4s9nFu8)
+12. Curso Python. Condicionales III. [Video 12](https://www.youtube.com/watch?v=qxgEolsC6rg)
+13. Curso Python. Condicionales IV. [Video 13](https://www.youtube.com/watch?v=rDGsWYnQEJY)
 
 
 # Apuntes
@@ -252,4 +255,45 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
     ```
 # Video 10 - Condicionales I
 - **Condicionales:**
-    - 
+    - Flujo de ejecución: orden que sigue un programa a la hora de ejecutarse. Suele ser de arriba hacia abajo, pero puede variar.
+    
+    ```python
+    if elemento:
+        condición
+    # Hay que tener en cuenta el ámbito de la variable. Si se declara dentro de una función, solo "funcionará" aquí dentro. No se puede manipular fuera de la función.
+
+    # Solicitud de valor. Se le puede pasar un texto descriptivo.
+    variable = input("Introduce un valor: ") # Por defecto se considera un valor como texto.
+    variable2 = int(input())
+    ```
+
+# Video 11 - Condicionales II
+- **Condicionales:**
+    ```python
+    if comprobación:
+        condición
+    elif comprobación:
+        condición
+    else
+        condición
+    ```
+
+# Video 12 - Condicionales III
+- **Condicionales:**
+    - Switch: no existe este condicional.
+    - Se puede utilizar concatenación de operadores de comparación a la hora de construir un condicional.
+    - Se puede utilizar operadores lógicos AND y OR. También existe "in" para evaluar varias condiciones.
+    ```python
+    # Se lee de izquierda a derecha. Si la primera condición es "falsa", pasaría a ejecutar el else. En cambio si es "verdadera" evalua la siguiente condición. Si es falsa, pasa al else, si no, ejecuta la condición.
+    if 0 < edad < 100:
+        print("Edad correcta.")
+    else:
+        print("Edad incorrecta.")
+
+    # Convierte a string una variable
+    str(variable)
+    ```
+
+
+# Video 13 - Condicionales IV
+- **Condicionales:**
