@@ -13,6 +13,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 7. Curso Python. Sintaxis Básica V. Las listas. [Vídeo 7](https://www.youtube.com/watch?v=Q8hugySbLQQ)
 8. Curso Python. Sintaxis Básica VI. Las tuplas. [Vídeo 8](https://www.youtube.com/watch?v=Ufqh8aoR9hE)
 9. Curso Python. Sintaxis Básica VII Los diccionarios. [Vídeo 9](https://www.youtube.com/watch?v=2OmgHl8lp0I)
+10. Curso Python. Condicionales I. [Vídeo 10](https://www.youtube.com/watch?v=iV-4F0jGWak)
 
 
 # Apuntes
@@ -223,3 +224,32 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
         ```
 
 # Video 9 - Sintaxis Básica VII Los diccionarios.
+- **Diccionarios**
+    - Estructura de datos parecida a las listas y tuplas. 
+    - Los datos se almacenan como **clave:valor**.
+    - Permite almacenar listas y otros diccionarios.
+    - Los elementos no están ordenados. El orden es indiferente a la hora de almacenar información en un diccionario.
+
+    ```python
+    diccionario = {"clave":"valor", "clave":"valor"...}
+    print(diccionario)
+    print(diccinario["clave"])
+
+    # Agregar/sobrescribe elemento
+    diccionario["nuevaclave"]="nuevovalor"
+
+    # Eliminar elemento
+    del diccionario["clave"]
+
+    # Devuelve las claves: keys
+    diccionario.keys()
+
+    # Devuelve los valores
+    diccionario.values()
+
+    # Devuelve la longitud del diccionario
+    len(diccionario)
+    ```
+# Video 10 - Condicionales I
+- **Condicionales:**
+    - 
