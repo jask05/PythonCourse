@@ -4,19 +4,21 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 
 ## Vistos
 
-1. Curso Python. [Vídeo 1](https://www.youtube.com/watch?v=G2FCfQj-9ig&index=1&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS)
-2. Curso Python. Introducción. [Vídeo 2](https://www.youtube.com/watch?v=9ojhJsXNWCI&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=2)
-3. Curso Python. Sintaxis Básica I. [Vídeo 3](https://www.youtube.com/watch?v=yppT6GPZMyo&index=3&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS)
-4. Curso Python. Sintaxis Básica II Tipos, operadores y variables. [Vídeo 4](https://www.youtube.com/watch?v=u4I9PqhqCo8&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=4)
-5. Curso Python. Sintaxis Básica III Funciones I. [Vídeo 5](https://www.youtube.com/watch?v=VY448UWAQ_0&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=5)
-6. Curso Python. Sintaxis Básica IV Funciones II. [Vídeo 6](https://www.youtube.com/watch?v=vawEHhV_HFA)
-7. Curso Python. Sintaxis Básica V. Las listas. [Vídeo 7](https://www.youtube.com/watch?v=Q8hugySbLQQ)
-8. Curso Python. Sintaxis Básica VI. Las tuplas. [Vídeo 8](https://www.youtube.com/watch?v=Ufqh8aoR9hE)
-9. Curso Python. Sintaxis Básica VII Los diccionarios. [Vídeo 9](https://www.youtube.com/watch?v=2OmgHl8lp0I)
-10. Curso Python. Condicionales I. [Vídeo 10](https://www.youtube.com/watch?v=iV-4F0jGWak)
-11. Curso Python. Condicionales II. [Vídeo 11](https://www.youtube.com/watch?v=cf7o4s9nFu8)
-12. Curso Python. Condicionales III. [Video 12](https://www.youtube.com/watch?v=qxgEolsC6rg)
-13. Curso Python. Condicionales IV. [Video 13](https://www.youtube.com/watch?v=rDGsWYnQEJY)
+1. [Vídeo 1](https://www.youtube.com/watch?v=G2FCfQj-9ig&index=1&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS)
+2. Introducción. [Vídeo 2](https://www.youtube.com/watch?v=9ojhJsXNWCI&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=2)
+3. Sintaxis Básica I. [Vídeo 3](https://www.youtube.com/watch?v=yppT6GPZMyo&index=3&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS)
+4. Sintaxis Básica II Tipos, operadores y variables. [Vídeo 4](https://www.youtube.com/watch?v=u4I9PqhqCo8&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=4)
+5. Sintaxis Básica III Funciones I. [Vídeo 5](https://www.youtube.com/watch?v=VY448UWAQ_0&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=5)
+6. Sintaxis Básica IV Funciones II. [Vídeo 6](https://www.youtube.com/watch?v=vawEHhV_HFA)
+7. Sintaxis Básica V. Las listas. [Vídeo 7](https://www.youtube.com/watch?v=Q8hugySbLQQ)
+8. Sintaxis Básica VI. Las tuplas. [Vídeo 8](https://www.youtube.com/watch?v=Ufqh8aoR9hE)
+9. Sintaxis Básica VII Los diccionarios. [Vídeo 9](https://www.youtube.com/watch?v=2OmgHl8lp0I)
+10. Condicionales I. [Vídeo 10](https://www.youtube.com/watch?v=iV-4F0jGWak)
+11. Condicionales II. [Vídeo 11](https://www.youtube.com/watch?v=cf7o4s9nFu8)
+12. Condicionales III. [Video 12](https://www.youtube.com/watch?v=qxgEolsC6rg)
+13. Condicionales IV. [Video 13](https://www.youtube.com/watch?v=rDGsWYnQEJY)
+14. Bucles I. For. [Video 14](https://www.youtube.com/watch?v=GQGhU1526Oo)
+15. Bucles II. For. [Video 15](https://www.youtube.com/watch?v=D416qOEDrhI)
 
 
 # Apuntes
@@ -294,6 +296,32 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
     str(variable)
     ```
 
-
 # Video 13 - Condicionales IV
 - **Condicionales:**
+    - Operadores lógicos **and** y **or**. **And** se podría traducir como un "y si además", y el **or** "o si no".
+    - **in**: compara lo que se almacena en una variable con varios valores.
+
+    ```python
+    if asignatura in ("Informática gráfica", "Pruebas de software", "Usabilidad y accesibilidad"):
+        # contenido
+
+    # Para que no sea case sensitive...
+    lower() # Transforma el valor a minúsculas
+    upper() # Transforma el valor a mayúsculas
+    ```
+
+# Video 14 - Bucles I. For
+- **Bucles - For:**
+    - Utilidad: repetir una línea de código una o varias veces.
+    - Tipos:
+        - Determinados: se ejecutan un úmero determinado de veces y se sabe a priori cuántas veces se va a ejecutar el código del interior del bucle.
+        - Indeterminados: se ejecutan un número indeterminado de veces y no se sabe a priori cuántas veces se va a ejecutar. El nº de veces dependerá de la circunstancia del programa.
+
+    ```python
+    for variable in elemento a recorrer:
+        cuerpo del bucle
+
+    # Elemento a recorrer: lista, tupla, string, rango, etc.
+    ```
+
+# Video 15 - Bucles II. For
