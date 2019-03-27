@@ -19,6 +19,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 13. Condicionales IV. [Video 13](https://www.youtube.com/watch?v=rDGsWYnQEJY)
 14. Bucles I. For. [Video 14](https://www.youtube.com/watch?v=GQGhU1526Oo)
 15. Bucles II. For. [Video 15](https://www.youtube.com/watch?v=D416qOEDrhI)
+16. Bucle III. For. [Video 16]()
 
 
 # Apuntes
@@ -325,3 +326,14 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
     ```
 
 # Video 15 - Bucles II. For
+- **Bucles - For:**
+    - Recorrido de strings.
+    - Tipo "range".
+    - Notaciones especiales con print.
+
+    ```python
+    for i in ["Pildoras", "Informáticas", 2019]:
+        print("Hola", end="") # No hace salto de línea
+    ```
+
+# Video 16 - Bucles III. For
