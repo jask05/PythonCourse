@@ -19,7 +19,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 13. Condicionales IV. [Video 13](https://www.youtube.com/watch?v=rDGsWYnQEJY)
 14. Bucles I. For. [Video 14](https://www.youtube.com/watch?v=GQGhU1526Oo)
 15. Bucles II. For. [Video 15](https://www.youtube.com/watch?v=D416qOEDrhI)
-16. Bucle III. For. [Video 16]()
+16. Bucle III. For. [Video 16](https://www.youtube.com/watch?v=KFz-mXB7qVI)
+17. Bucles IV. While. [Video 17](https://www.youtube.com/watch?v=UfUM6uzl5SM)
 
 
 # Apuntes
@@ -337,3 +338,27 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
     ```
 
 # Video 16 - Bucles III. For
+- **Bucles - For:**
+    - Notación especial con print.
+    
+    ```python
+    for i in range(5):
+        print(f"Valor de la variable: {i}")
+        # f-strings
+        # Unir texto con variables.
+        # 
+    ```
+
+# Video 17 - Bucles IV. Bucle While
+- **Bucles - While:**
+    - Se desconoce cuántas veces se va a ejecutar hasta que se sepa con exactitud.
+```python
+while condicion
+    # cuerpo del bucle
+```
+
+# Video 18 - Bucles V. Bucles: continue, pass y else
+- **Bucles: continue, pass y else:**
+    - **Continue**: salta a la siguiente iteración del bucle. Ignora esa vuelta de bucle y saltaría a la siguiente.
+    - **Pass**: devuelve "null" en cuanto se lee el bucle, es como si no se ejecuta esa iteración. Se suele usar en clases nulas (para dejarla para después) o para bucles sin definir.
+    - **Else**: funciona como en un condicional. Se ejecuta cuando el bucle está vacío, cuando haya terminado de recorrer el texto (haya completado todas las vueltas)
