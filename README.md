@@ -21,6 +21,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 15. Bucles II. For. [Video 15](https://www.youtube.com/watch?v=D416qOEDrhI)
 16. Bucle III. For. [Video 16](https://www.youtube.com/watch?v=KFz-mXB7qVI)
 17. Bucles IV. While. [Video 17](https://www.youtube.com/watch?v=UfUM6uzl5SM)
+18. Bucles V. Continue, pass y else. [Video 18](https://www.youtube.com/watch?v=c8WCRTU4udo)
+19. Generadores I. [Video 19](https://www.youtube.com/watch?v=TLVnoqXGWpY)
 
 
 # Apuntes
@@ -362,3 +364,27 @@ while condicion
     - **Continue**: salta a la siguiente iteración del bucle. Ignora esa vuelta de bucle y saltaría a la siguiente.
     - **Pass**: devuelve "null" en cuanto se lee el bucle, es como si no se ejecuta esa iteración. Se suele usar en clases nulas (para dejarla para después) o para bucles sin definir.
     - **Else**: funciona como en un condicional. Se ejecuta cuando el bucle está vacío, cuando haya terminado de recorrer el texto (haya completado todas las vueltas)
+
+# Video 19 - Generadores I
+- **Generadores:**
+    - Estructuras que extraen valores de una función que se almacenan en objetos iterables. Se pueden recorrer con un bucle (while/for) o con iteradores.
+    - Los valores se almacenan de uno en uno.
+    - Cada vez que se almacene un valor, el generador permanece en un estado de stand-by o pausa. Llamado: suspensión de estado.
+    - ¿Ventajas? 
+        - Más eficientes que funciones tradicionales. No guarda todos los elementos en memoria, si no que va 1 a 1 (más rápido).
+        - Muy útiles con lista de valores infinitos: generar Ips al azar.
+        - En algunos escensarios, será más útil que un generador devuelva los valores de uno en uno.
+
+    
+    ```python
+    # Función tradicional
+    """ El control de flujo pasa de la llamada a la función. Genera la lista de nº pares y con la instrucción return devuelve la lista, y al devolverla, el control de flujo de la ejecución vuelve otra vez donde se generó la llamada. """
+    def generaNumeros():
+        return numeros
+
+    # Generador
+    """
+    Hay una función, con líneas de código que construyen la lista. En lugar de la instrucción return, estaría la instrucción yield. Gracias a esta, lo que se consigue es que cuando en el código hay una llamada a esa función, el control de ejecución pasa a esa función, y la instrucción yield construye un objeto iterable con el primer valor de esa lista (ej nº pares). Se construye un objeto generador iterable en el cual está almacenado el primer valor que nos ha de devolver. Una vez generado ese objeto pasa a stand-by (suspensión) y el control de flujo de ejecución pasa otra vez al algoritmo donde se hizo la llamada. Si se vuelve a llamar al generador vuelve a obtener el segundo valor y entra en suspensión. Se devuelven los valores de 1 en 1 dentro de un objeto generador iterable."""
+    def generarNumeros():
+        yield numeros
+    ```
