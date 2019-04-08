@@ -23,6 +23,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 17. Bucles IV. While. [Video 17](https://www.youtube.com/watch?v=UfUM6uzl5SM)
 18. Bucles V. Continue, pass y else. [Video 18](https://www.youtube.com/watch?v=c8WCRTU4udo)
 19. Generadores I. [Video 19](https://www.youtube.com/watch?v=TLVnoqXGWpY)
+20. Generadores II. [Video 20](https://www.youtube.com/watch?v=ucaHqGII350)
+21. Excepciones I. [Video 21](https://www.youtube.com/watch?v=2MaAs7XU2T0)
 
 
 # Apuntes
@@ -388,3 +390,32 @@ while condicion
     def generarNumeros():
         yield numeros
     ```
+
+# Video 20 - Generadores II
+- **Generadores:**
+    - Cuando se utiliza **yield from** lo que se hace es simplificar el código de los generadores en el caso de utilizar bucles anidados.
+    - Se parece un array de 2 dimensiones.
+
+     ```python
+    # Cuando se coloca un asterisco se indica que recibe nº
+    # indeterminado de elementos y también se le indica
+    # que estos argumentos serán tuplas
+    # Yield from simplifica la siguiente sintáxis
+    """
+    def devuelve_ciudades(*ciudades):
+        for elemento in ciudades:
+            for subElemento in elemento:
+                yield subElemento
+    """
+    def devuelve_ciudades(*ciudades):
+        for elemento in ciudades:
+            yield from elemento
+
+    ciudades_devueltas=devuelve_ciudades("Madrid", "Barcelona", "Valencia", "Bilbao")
+
+    print(next(ciudades_devueltas))
+    print(next(ciudades_devueltas))
+    ```
+
+# Video 21 - Excepciones
+- **Excepciones:**
