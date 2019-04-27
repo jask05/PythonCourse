@@ -25,7 +25,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 19. Generadores I. [Video 19](https://www.youtube.com/watch?v=TLVnoqXGWpY)
 20. Generadores II. [Video 20](https://www.youtube.com/watch?v=ucaHqGII350)
 21. Excepciones I. [Video 21](https://www.youtube.com/watch?v=2MaAs7XU2T0)
-
+22. Excepciones II. [Video 22](https://www.youtube.com/watch?v=HH3c6ZBvSx8)
+23. Excepciones III. [Video 23](https://www.youtube.com/watch?v=dLH-oay4Bts)
 
 # Apuntes
 
@@ -419,3 +420,15 @@ while condicion
 
 # Video 21 - Excepciones
 - **Excepciones:**
+    - **¿Qué es?** error en tiempo de ejecución. Cuando hay un programa correctamente escrito, sin error de sintáxis, pero pasa algo inesperado.
+    - "Intenta ejecutar esta parte del código y si no puedes continúa."
+
+# Video 22 - Excepciones II
+- **Excepciones:**
+    - Capturar varias excepciones.
+    - Cláusula **finally**. Se ejecuta siempre, tanto si ocurre o no una excepción.
+
+# Video 23 - Excepciones III
+- **Excepciones:**
+    - Instrucción **raise**.
+    - Creación de excepciones propias.
