@@ -27,6 +27,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 21. Excepciones I. [Video 21](https://www.youtube.com/watch?v=2MaAs7XU2T0)
 22. Excepciones II. [Video 22](https://www.youtube.com/watch?v=HH3c6ZBvSx8)
 23. Excepciones III. [Video 23](https://www.youtube.com/watch?v=dLH-oay4Bts)
+24. POO I. [Video 24](https://www.youtube.com/watch?v=5Ohme4A2Weg)
 
 # Apuntes
 
@@ -432,3 +433,15 @@ while condicion
 - **Excepciones:**
     - Instrucción **raise**.
     - Creación de excepciones propias.
+    ```python
+    def evaluaEdad(edad):
+        if edad<0:
+            raise TypeError("No se permiten edades negativas")
+
+    print(evaluaEdad(-18))
+    ```
+
+# Video 24 - POO I
+- **POO**
+    - ¿Qué es?: 
+    - Ventajas: 
