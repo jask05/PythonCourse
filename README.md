@@ -28,6 +28,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 22. Excepciones II. [Video 22](https://www.youtube.com/watch?v=HH3c6ZBvSx8)
 23. Excepciones III. [Video 23](https://www.youtube.com/watch?v=dLH-oay4Bts)
 24. POO I. [Video 24](https://www.youtube.com/watch?v=5Ohme4A2Weg)
+25. POO II. [Video 25](https://www.youtube.com/watch?v=2UNrSiKEI8w)
+26. POO III. [Video 26](https://www.youtube.com/watch?v=Y_SiIgxc-xI)
 
 # Apuntes
 
@@ -443,5 +445,32 @@ while condicion
 
 # Video 24 - POO I
 - **POO**
-    - ¿Qué es?: 
-    - Ventajas: 
+    - Paradigmas de programación
+        - Orientado a procedimientos (antiguos): Fortran, Cobol, Basic...
+        - Programación Orientado a objetos
+    - ¿Qué es?:
+        - Trasladar el comportamiento de los objetos reales a código.
+        - Los objetos tienen un estado, un comportamiento (¿qué pueden hacer?), y unas propiedades.
+    - Ejemplo (coche):
+        - **Estado**: parado, circulando, aparcado, etc.
+        - **Propiedades (atributos)**: color, peso, tamaño, etc.
+        - **Comportamiento**: puede arrancar, frenar, girar, acelerar, etc.
+    - Ventajas:
+        - Programa dividido en "partes" (módulos,clases, etc.). Modularización.
+        - Código reutilizable. Herencia.
+        - Si existe algún fallo el programa no cae, sigue funcionando.
+        - Encapsulamiento.
+
+# Video 25 - POO II
+- **POO**
+    - Vocabulario:
+        - **Clase**: modelo donde se redactan las características comunes de un grupo de objetos. Coche => chasis, 4 ruedas.
+        - **Objeto / Ejemplar de clase / instacia de clase / ejemplarizar una clase**: objeto o ejemplar perteneciente a una clase. Comparten una serie de características comunes, y luego cada uno de ellos tiene sus propias características.
+        - **Modularización**: aplicación con varias clases. Cada elemento puede funcionar de forma independiente.
+        - **Encapsulamiento / encapsulación**: el funcionamiento interno de un objeto está protegido del exterior. Una clase "no sabe" lo que hace otra clase. Las clases se "conectan" utilizando **métodos de acceso.** Solo tendrán acceso a ciertas características de algunas clases.
+        - **Herencia**: 
+        - **Polimorfismo**:
+        - **Nomenclatura del punto:** 
+            - Objeto: miCoche
+            - Acceso a propiedades: miCoche.valor // miCoche.color // miCoche.altura
+            - Acceso a comportamientos: miCoche.arranca() // miCoche.frena() // miCoche.gira()
