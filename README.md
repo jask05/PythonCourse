@@ -30,6 +30,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 24. POO I. [Video 24](https://www.youtube.com/watch?v=5Ohme4A2Weg)
 25. POO II. [Video 25](https://www.youtube.com/watch?v=2UNrSiKEI8w)
 26. POO III. [Video 26](https://www.youtube.com/watch?v=Y_SiIgxc-xI)
+27. POO IV. [Video 27](https://www.youtube.com/watch?v=x5CY8fVyYLo)
 
 # Apuntes
 
@@ -454,7 +455,8 @@ while condicion
     - Ejemplo (coche):
         - **Estado**: parado, circulando, aparcado, etc.
         - **Propiedades (atributos)**: color, peso, tamaño, etc.
-        - **Comportamiento**: puede arrancar, frenar, girar, acelerar, etc.
+        - **Métodos (Comportamiento)**: Función especial que pertenece a la clase donde se crea. La función no pertenece a ninguna clase. Puede arrancar, frenar, girar, acelerar, etc.
+            - **self**: hace referencia al propio objeto perteneciente a la clase.
     - Ventajas:
         - Programa dividido en "partes" (módulos,clases, etc.). Modularización.
         - Código reutilizable. Herencia.
@@ -474,3 +476,20 @@ while condicion
             - Objeto: miCoche
             - Acceso a propiedades: miCoche.valor // miCoche.color // miCoche.altura
             - Acceso a comportamientos: miCoche.arranca() // miCoche.frena() // miCoche.gira()
+
+# Video 26 - POO III
+- **POO**
+    - El **self** dentro de un método se "traduce" como el nombre de la variable con la que se instancia la clase.
+    ```python
+    class Coche():
+        enmarcha = Flase
+
+        def arrancar(self):
+            self.enmarcha = True
+
+    miCoche = Coche()
+    miCoche.arrancar() # True // Traducción: miCoche.enmarcha = Ture
+    ```
+
+# Video 27 - POO IV
+- **POO**
