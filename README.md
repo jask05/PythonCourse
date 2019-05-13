@@ -31,6 +31,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 25. POO II. [Video 25](https://www.youtube.com/watch?v=2UNrSiKEI8w)
 26. POO III. [Video 26](https://www.youtube.com/watch?v=Y_SiIgxc-xI)
 27. POO IV. [Video 27](https://www.youtube.com/watch?v=x5CY8fVyYLo)
+28. POO V. [Video 28](https://www.youtube.com/watch?v=OU-e2uhoGxE)
 
 # Apuntes
 
@@ -493,3 +494,11 @@ while condicion
 
 # Video 27 - POO IV
 - **POO**
+    - **Constructor**: método especial que le da estado inicial a los objetos. Forma de especificar claramente cual va a ser el estado inicial de los objetos que pertenezcan a una clase.
+    - **Encapsulación:** protege una propiedad para que no se pueda modificar desde fuera de la clase. Para ello se pone dos guiones bajos en el nombre de la variable. **IMPORTANTE**: cuando se usa la variable hay que poner los dos guiones bajos. Si se llama a la variable como "ruedas" en vez de "__ruedas" estaríamos hablando de dods variables diferentes.
+    ```python
+    self.__ruedas = 4
+    ```
+# Video 28 - POO V
+- **POO**
+    - **Encapsulación de métodos:** igual que con las variables, utilizando guión bajo. Se deben encapsular cuando el objeto o la clase así lo necesite. Depende del comportamiento que se busque que tenga según el propio criterio del desarrollo.
