@@ -36,6 +36,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 30. POO VII. Herencia II. [Video 30](https://www.youtube.com/watch?v=jMQQN9OxwVc)
 31. POO VIII. Herencia III. [Video 31](https://www.youtube.com/watch?v=oe04X1B14YY)
 32. POO IX. Polimorfismo I. [Video 32](https://www.youtube.com/watch?v=kV1cN_bqcSw)
+33. Métodos de cadenas. [Video 33](https://www.youtube.com/watch?v=zH0VsRuD2ok)
 
 # Apuntes
 
@@ -522,4 +523,7 @@ self.__ruedas = 4
     - **super()**: llama al método de la clase padre.
     - **isinstance()**: informa si un objeto es instancia de una clase determinada. Devuelve True o False. **No hace falta utilizar self.**
 
-# Video 32. - POO. Polimorfismo I.
+# Video 32 - POO. Polimorfismo.
+- **Polimorfismo**: "muchas formas". Un objeto puede cambiar de forma dependiendo del contexto donde se utilice el método/compotamiento. Se tienen que llamar todos los métodos de la misma clase de la misma manera.
+
+# Video 33 - Métodos de caneras
