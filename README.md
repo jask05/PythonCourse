@@ -32,8 +32,10 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 26. POO III. [Video 26](https://www.youtube.com/watch?v=Y_SiIgxc-xI)
 27. POO IV. [Video 27](https://www.youtube.com/watch?v=x5CY8fVyYLo)
 28. POO V. [Video 28](https://www.youtube.com/watch?v=OU-e2uhoGxE)
-29. POO VI. [Video 29](https://www.youtube.com/watch?v=u_VbLsIyzRk)
-30. POO VII. [Video 30](https://www.youtube.com/watch?v=jMQQN9OxwVc)
+29. POO VI. Herencia I. [Video 29](https://www.youtube.com/watch?v=u_VbLsIyzRk)
+30. POO VII. Herencia II. [Video 30](https://www.youtube.com/watch?v=jMQQN9OxwVc)
+31. POO VIII. Herencia III. [Video 31](https://www.youtube.com/watch?v=oe04X1B14YY)
+32. POO IX. Polimorfismo I. [Video 32](https://www.youtube.com/watch?v=kV1cN_bqcSw)
 
 # Apuntes
 
@@ -508,3 +510,16 @@ self.__ruedas = 4
     - **¿Qué es?**: clase 1 (clase padre/superclase) => clase 2 (subclase/superclase). Conjunto de clases que toman elementos de otras.
     - **¿Para qué sirve?**: Reutilización de código. Preguntarse qué características en común tienen todos los objetos. También qué comportamientos en común tienen entre todos.
     - **¿Cómo hacer que las clases hereden?**: Se engloban todos las propiedades y métodos en una clase/superclase. Las particularidades se construyen en sus propias clases.
+
+# Video 30 - POO VII. Herencia II
+- **Herencia**
+    - Sobre escritura de métodos.
+    - **Herencia simple y múltiple**: hereda el constructor de la primera clase asignada en la herencia múltiple (más a la izquierda).
+
+# Video 31 - POO VIII. Herencia III
+- **Herencia**
+    - Como depende de que clase herede primera, puede heredar su **init** o no. La solución **no elegante** es duplicar ese init que se necesita en el de la clase que va a heredar. La **mejor solución** es utilizar el método **super()**.
+    - **super()**: llama al método de la clase padre.
+    - **isinstance()**: informa si un objeto es instancia de una clase determinada. Devuelve True o False. **No hace falta utilizar self.**
+
+# Video 32. - POO. Polimorfismo I.
