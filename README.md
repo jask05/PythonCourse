@@ -41,8 +41,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 # Apuntes
 
 ## Vídeo 1
-
-    Nada
+- URLs interesantes:
+    - [Referencia de la Biblioteca Python](http://pyspanishdoc.sourceforge.net/lib/lib.html)
 
 ## Vídeo 2
 
@@ -526,4 +526,18 @@ self.__ruedas = 4
 # Video 32 - POO. Polimorfismo.
 - **Polimorfismo**: "muchas formas". Un objeto puede cambiar de forma dependiendo del contexto donde se utilice el método/compotamiento. Se tienen que llamar todos los métodos de la misma clase de la misma manera.
 
-# Video 33 - Métodos de caneras
+# Video 33 - Métodos de cadenas
+- **Manipulación de cadenas (strings)**:
+    - **upper()**: convierte en mayúscula todas las letras de un string.
+    - **lower()**: convierte en minúsculas todas las letras de un string.
+    - **capitalize()**: string pone la primera letra en mayúscula.
+    - **count()**: cuenta cuantas veces aparece una letra o una cadena de caractéres dentro de un texto.
+    - **find()**: representa el índice, la posición, en la cual aparece un carácter o un grupo de ellos dentro de un texto.
+    - **isdigit()**: comprueba si un dígito es valor númérico o no. Devuelve True/False.
+    - **isalum()**: comprueba si los caracteres son alfanuméricos.
+    - **isalpha()**: comprueba si hay solo letras. Espacios NO cuentan.
+    - **split()**: separa por palabras utilizando espacios.
+    - **strip()**: borra los espacios sobrantes al principio y final.
+    - **replace()**: cambia una palabra/letra por otra.
+    - **rfind()**: representa el índice de un carácter, pero lo hace contando desde atrás.
+    - [Más métodos...](http://pyspanishdoc.sourceforge.net/lib/string-methods.html)
