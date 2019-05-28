@@ -37,6 +37,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 31. POO VIII. Herencia III. [Video 31](https://www.youtube.com/watch?v=oe04X1B14YY)
 32. POO IX. Polimorfismo I. [Video 32](https://www.youtube.com/watch?v=kV1cN_bqcSw)
 33. Métodos de cadenas. [Video 33](https://www.youtube.com/watch?v=zH0VsRuD2ok)
+34. Módulos. [Video 34](https://www.youtube.com/watch?v=t93x-vnFvP4)
 
 # Apuntes
 
@@ -541,3 +542,13 @@ self.__ruedas = 4
     - **replace()**: cambia una palabra/letra por otra.
     - **rfind()**: representa el índice de un carácter, pero lo hace contando desde atrás.
     - [Más métodos...](http://pyspanishdoc.sourceforge.net/lib/string-methods.html)
+
+# Video 34 - Módulos
+- **Módulos**
+    - Archivo con extensión .py o .pyc (python compilado), o archivos escritos en C para CPython que posee su propio espacio de nombres y que puede contener variables, funciones, clases e incluso otros módulos.
+    - Sirven para organizar y reutilizar el código (modularización y reutilización).
+    - ¿Cómo se crean? Es un archivo con extensión .py
+    - Cuando se importa el módulo se utiliza la nomenclatura del punto. **Nombre_objeto.propiedad/método**. 
+        - Para que sea más fácil de usar hay que modificar la directiva import. **from <nombre módulo> import <función a usar>**.
+        - Si se quiere usar todo el código que hay dentro del módulo, se usa from <módulo> import *. Con el * se reserva un espacio muy grande de memoria porque se guardaría espacio para todo el módulo.
+        - Si no encuentra el módulo en el mismo nivel (path) utiliza el **syspath**. 

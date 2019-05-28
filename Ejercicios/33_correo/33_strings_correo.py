@@ -17,21 +17,16 @@ emailCount = email.count("@")
 emailFirstLetter = email[0]
 emailLen = len(email)
 
-domains = [".com", ".es", ".org", ".net", ".co.uk", ".com.ar"]
+domains = (".com", ".es", ".org", ".net", ".co.uk", ".com.ar")
 
 if(emailCount == 1):
     if(emailFirstLetter == "@" or email[emailLen-1] == "@"):
         wrongEmail()
     else:
-        if(domains in email):
-            print("ok")
-        # for domain in domains:
-        #     if(email.count(domain)):
-        #         print(email.count(domain))
-        #         print("[+] Email CORRECTO!!!!")
-        #         break
-        #     else:
-        #         print("[+] Dominio NO encontrado.")
+        if(email.endswith(domains)):
+            print("[+] Dirección de email correcta.")
+        else:
+            print("[+] La dirección de email está asociada a un dominio desconocido.")
 else:
     wrongEmail()
 
