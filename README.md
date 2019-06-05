@@ -505,7 +505,7 @@ while condicion
 - **Encapsulación:** protege una propiedad para que no se pueda modificar desde fuera de la clase. Para ello se pone dos guiones bajos en el nombre de la variable. **IMPORTANTE**: cuando se usa la variable hay que poner los dos guiones bajos. Si se llama a la variable como "ruedas" en vez de "__ruedas" estaríamos hablando de dods variables diferentes.
 ```python
 self.__ruedas = 4
-    ```
+```
 # Video 28 - POO V
 - **Encapsulación de métodos:** igual que con las variables, utilizando guión bajo. Se deben encapsular cuando el objeto o la clase así lo necesite. Depende del comportamiento que se busque que tenga según el propio criterio del desarrollo.
 
@@ -563,3 +563,16 @@ self.__ruedas = 4
     - Se pueden crear subpaquetes: paquetes dentro de un paquete.
 
 # VIdeo 36 - Paquetes distribuibles
+- **Paquetes distribuibles**
+    - Para que se puedan reutilizar por diferentes personas o diferentes proyectos. 
+    - Se pueden enviar por correo o subirlos a una plataforma.
+    - Se instala el paquete dentro de Python del SO.
+    - Hay que crear en la raíz un fichero **setup.py**.
+    ```python
+    python3 setup.py sdist
+    ```
+    - Ejecutado el comando debe crear una carpeta denominada **<nombre>.egg-info** y **dist**.
+    - Para instalar ir al directorio **dist** y utilizar la instrucción: **pip3 install <nombre-paquete>.tar.gz**
+    - Cuando se desea usar el paquete se debe poner tanto el **from** como el **import**. La ventaja es que ya no necesitará una ruta absoluta o mantener el fichero en el mismo directorio, como se ha instalado con **pip** solo es necesario hacer la llamada pertinente.
+    - **Desinstalar paquete:** pip3 uninstall <nombre-paquete>.tar.gz
+    - NOTA: verificar instalación y desinstalación.
