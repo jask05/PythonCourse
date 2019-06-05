@@ -38,6 +38,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 32. POO IX. Polimorfismo I. [Video 32](https://www.youtube.com/watch?v=kV1cN_bqcSw)
 33. Métodos de cadenas. [Video 33](https://www.youtube.com/watch?v=zH0VsRuD2ok)
 34. Módulos. [Video 34](https://www.youtube.com/watch?v=t93x-vnFvP4)
+35. Paquetes. [Video 35](https://www.youtube.com/watch?v=nRieWujis4s)
+36. Paquetes distribuibles. [Video 36](https://www.youtube.com/watch?v=Zf9sN-w0BVE)
 
 # Apuntes
 
@@ -552,3 +554,12 @@ self.__ruedas = 4
         - Para que sea más fácil de usar hay que modificar la directiva import. **from <nombre módulo> import <función a usar>**.
         - Si se quiere usar todo el código que hay dentro del módulo, se usa from <módulo> import *. Con el * se reserva un espacio muy grande de memoria porque se guardaría espacio para todo el módulo.
         - Si no encuentra el módulo en el mismo nivel (path) utiliza el **syspath**. 
+
+# Video 35 - Paquetes
+- **Paquetes**
+    - Directorios/carpetas donde se almacenan los módulos relacioandos entre si.
+    - Se utilizan para organizar y reutilizar código.
+    - **¿Cómo se crea?**: Hay que crear una carpeta con un archivo **__init__.py**.
+    - Se pueden crear subpaquetes: paquetes dentro de un paquete.
+
+# VIdeo 36 - Paquetes distribuibles
