@@ -40,6 +40,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 34. Módulos. [Video 34](https://www.youtube.com/watch?v=t93x-vnFvP4)
 35. Paquetes. [Video 35](https://www.youtube.com/watch?v=nRieWujis4s)
 36. Paquetes distribuibles. [Video 36](https://www.youtube.com/watch?v=Zf9sN-w0BVE)
+37. Archivos externos I. [Video 37](https://www.youtube.com/watch?v=V87m9SltcI8)
+38. Archivos externos II. [Video 38](https://www.youtube.com/watch?v=0dEYVSRYl_s)
 
 # Apuntes
 
@@ -562,7 +564,7 @@ self.__ruedas = 4
     - **¿Cómo se crea?**: Hay que crear una carpeta con un archivo **__init__.py**.
     - Se pueden crear subpaquetes: paquetes dentro de un paquete.
 
-# VIdeo 36 - Paquetes distribuibles
+# Video 36 - Paquetes distribuibles
 - **Paquetes distribuibles**
     - Para que se puedan reutilizar por diferentes personas o diferentes proyectos. 
     - Se pueden enviar por correo o subirlos a una plataforma.
@@ -576,3 +578,20 @@ self.__ruedas = 4
     - Cuando se desea usar el paquete se debe poner tanto el **from** como el **import**. La ventaja es que ya no necesitará una ruta absoluta o mantener el fichero en el mismo directorio, como se ha instalado con **pip** solo es necesario hacer la llamada pertinente.
     - **Desinstalar paquete:** pip3 uninstall <nombre-paquete>.tar.gz
     - NOTA: verificar instalación y desinstalación.
+
+# Video 37 - Archivos externos I
+- **Archivos externos**
+    - Módulo **io**.
+    - Objetivos:
+        - Persistencia de datos.
+    - Alternativas:
+        - Archivos externos.
+        - Trabajar con BBDD.
+    - Fases:
+        - Creación
+        - Apertura
+        - Manipulación
+        - Cierre
+
+# Video 38 - Archivos externos II
+- **Archivos externos**
