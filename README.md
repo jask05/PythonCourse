@@ -44,6 +44,9 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 38. Archivos externos II. [Video 38](https://www.youtube.com/watch?v=0dEYVSRYl_s)
 39. Serialización I. [Video 39](https://www.youtube.com/watch?v=SOimkkfQIOM)
 40. Serialiación II. [Video 40](https://www.youtube.com/watch?v=CkfDnMC79b4)
+41. Guardado permanente. [Video 41](https://www.youtube.com/watch?v=J3qvf1fTCsU)
+42. Interfaces gráficas I. [Video 42](https://www.youtube.com/watch?v=hTUJC8HsC2I)
+43. Interfaces gráficas II. [Video 43](https://www.youtube.com/watch?v=M80CzDC1Crc)
 
 # Apuntes
 
@@ -107,22 +110,6 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
         print("El numero2 es mayor")
     ```
 
-## Notas
-
-- En Python todo es un objeto. Se puede ver el tipo con la función *type()*.
-    ```python
-    num=5
-    type(num)
-    <class 'int'>
-    
-    text="Hola"
-    type(text)
-    <class 'str'>
-    #Puede tener multisalto utilizando triple comillas dobles (""")
-    
-    coma=5.2
-    type(coma)
-    <class 'float'>
     ```
 
 ## Video 5 - Sintaxis Básica III Funciones I
@@ -247,7 +234,7 @@ lista = ["ele1", "ele2", "ele3"] * 3
         nombre, dia, mes, anio = tupla
         ```
 
-# Video 9 - Sintaxis Básica VII Los diccionarios.
+## Video 9 - Sintaxis Básica VII Los diccionarios.
 - Estructura de datos parecida a las listas y tuplas. 
 - Los datos se almacenan como **clave:valor**.
 - Permite almacenar listas y otros diccionarios.
@@ -274,7 +261,7 @@ diccionario.values()
 len(diccionario)
 ```
 
-# Video 10 - Condicionales I
+## Video 10 - Condicionales I
 - Flujo de ejecución: orden que sigue un programa a la hora de ejecutarse. Suele ser de arriba hacia abajo, pero puede variar.
 
 ```python
@@ -287,7 +274,7 @@ variable = input("Introduce un valor: ") # Por defecto se considera un valor com
 variable2 = int(input())
 ```
 
-# Video 11 - Condicionales II
+## Video 11 - Condicionales II
 ```python
 if comprobación:
     condición
@@ -297,7 +284,7 @@ else
     condición
 ```
 
-# Video 12 - Condicionales III
+## Video 12 - Condicionales III
 - Switch: no existe este condicional.
 - Se puede utilizar concatenación de operadores de comparación a la hora de construir un condicional.
 - Se puede utilizar operadores lógicos AND y OR. También existe "in" para evaluar varias condiciones.
@@ -312,7 +299,7 @@ else:
 str(variable)
 ```
 
-# Video 13 - Condicionales IV
+## Video 13 - Condicionales IV
 - Operadores lógicos **and** y **or**. **And** se podría traducir como un "y si además", y el **or** "o si no".
 - **in**: compara lo que se almacena en una variable con varios valores.
 
@@ -325,7 +312,7 @@ lower() # Transforma el valor a minúsculas
 upper() # Transforma el valor a mayúsculas
 ```
 
-# Video 14 - Bucles I. For
+## Video 14 - Bucles I. For
 - Utilidad: repetir una línea de código una o varias veces.
 - Tipos:
     - Determinados: se ejecutan un úmero determinado de veces y se sabe a priori cuántas veces se va a ejecutar el código del interior del bucle.
@@ -338,7 +325,7 @@ for variable in elemento a recorrer:
 # Elemento a recorrer: lista, tupla, string, rango, etc.
 ```
 
-# Video 15 - Bucles II. For
+## Video 15 - Bucles II. For
 - Recorrido de strings.
 - Tipo "range".
 - Notaciones especiales con print.
@@ -348,7 +335,7 @@ for i in ["Pildoras", "Informáticas", 2019]:
     print("Hola", end="") # No hace salto de línea
 ```
 
-# Video 16 - Bucles III. For
+## Video 16 - Bucles III. For
 - Notación especial con print.
 
 ```python
@@ -359,19 +346,19 @@ for i in range(5):
     # 
 ```
 
-# Video 17 - Bucles IV. Bucle While
+## Video 17 - Bucles IV. Bucle While
 - Se desconoce cuántas veces se va a ejecutar hasta que se sepa con exactitud.
 ```python
 while condicion
 # cuerpo del bucle
 ```
 
-# Video 18 - Bucles V. Bucles: continue, pass y else
+## Video 18 - Bucles V. Bucles: continue, pass y else
 - **Continue**: salta a la siguiente iteración del bucle. Ignora esa vuelta de bucle y saltaría a la siguiente.
 - **Pass**: devuelve "null" en cuanto se lee el bucle, es como si no se ejecuta esa iteración. Se suele usar en clases nulas (para dejarla para después) o para bucles sin definir.
 - **Else**: funciona como en un condicional. Se ejecuta cuando el bucle está vacío, cuando haya terminado de recorrer el texto (haya completado todas las vueltas)
 
-# Video 19 - Generadores I
+## Video 19 - Generadores I
 - Estructuras que extraen valores de una función que se almacenan en objetos iterables. Se pueden recorrer con un bucle (while/for) o con iteradores.
 - Los valores se almacenan de uno en uno.
 - Cada vez que se almacene un valor, el generador permanece en un estado de stand-by o pausa. Llamado: suspensión de estado.
@@ -394,7 +381,7 @@ def generarNumeros():
     yield numeros
 ```
 
-# Video 20 - Generadores II
+## Video 20 - Generadores II
 - Cuando se utiliza **yield from** lo que se hace es simplificar el código de los generadores en el caso de utilizar bucles anidados.
 - Se parece un array de 2 dimensiones.
 
@@ -419,15 +406,15 @@ print(next(ciudades_devueltas))
 print(next(ciudades_devueltas))
 ```
 
-# Video 21 - Excepciones
+## Video 21 - Excepciones
 - **¿Qué es?** error en tiempo de ejecución. Cuando hay un programa correctamente escrito, sin error de sintáxis, pero pasa algo inesperado.
 - "Intenta ejecutar esta parte del código y si no puedes continúa."
 
-# Video 22 - Excepciones II
+## Video 22 - Excepciones II
 - Capturar varias excepciones.
 - Cláusula **finally**. Se ejecuta siempre, tanto si ocurre o no una excepción.
 
-# Video 23 - Excepciones III
+## Video 23 - Excepciones III
 - Instrucción **raise**.
 - Creación de excepciones propias.
 ```python
@@ -438,7 +425,7 @@ def evaluaEdad(edad):
 print(evaluaEdad(-18))
 ```
 
-# Video 24 - POO I
+## Video 24 - POO I
 - Paradigmas de programación
     - Orientado a procedimientos (antiguos): Fortran, Cobol, Basic...
     - Programación Orientado a objetos
@@ -456,7 +443,7 @@ print(evaluaEdad(-18))
     - Si existe algún fallo el programa no cae, sigue funcionando.
     - Encapsulamiento.
 
-# Video 25 - POO II
+## Video 25 - POO II
 - Vocabulario:
     - **Clase**: modelo donde se redactan las características comunes de un grupo de objetos. Coche => chasis, 4 ruedas.
     - **Objeto / Ejemplar de clase / instacia de clase / ejemplarizar una clase**: objeto o ejemplar perteneciente a una clase. Comparten una serie de características comunes, y luego cada uno de ellos tiene sus propias características.
@@ -469,7 +456,7 @@ print(evaluaEdad(-18))
         - Acceso a propiedades: miCoche.valor // miCoche.color // miCoche.altura
         - Acceso a comportamientos: miCoche.arranca() // miCoche.frena() // miCoche.gira()
 
-# Video 26 - POO III
+## Video 26 - POO III
 - El **self** dentro de un método se "traduce" como el nombre de la variable con la que se instancia la clase.
 ```python
 class Coche():
@@ -482,33 +469,33 @@ miCoche = Coche()
 miCoche.arrancar() # True // Traducción: miCoche.enmarcha = Ture
     ```
 
-# Video 27 - POO IV
+## Video 27 - POO IV
 - **Constructor**: método especial que le da estado inicial a los objetos. Forma de especificar claramente cual va a ser el estado inicial de los objetos que pertenezcan a una clase.
 - **Encapsulación:** protege una propiedad para que no se pueda modificar desde fuera de la clase. Para ello se pone dos guiones bajos en el nombre de la variable. **IMPORTANTE**: cuando se usa la variable hay que poner los dos guiones bajos. Si se llama a la variable como "ruedas" en vez de "__ruedas" estaríamos hablando de dods variables diferentes.
 ```python
 self.__ruedas = 4
 ```
-# Video 28 - POO V
+## Video 28 - POO V
 - **Encapsulación de métodos:** igual que con las variables, utilizando guión bajo. Se deben encapsular cuando el objeto o la clase así lo necesite. Depende del comportamiento que se busque que tenga según el propio criterio del desarrollo.
 
-# Video 29 - POO VI. Herencia
+## Video 29 - POO VI. Herencia
 - **¿Qué es?**: clase 1 (clase padre/superclase) => clase 2 (subclase/superclase). Conjunto de clases que toman elementos de otras.
 - **¿Para qué sirve?**: Reutilización de código. Preguntarse qué características en común tienen todos los objetos. También qué comportamientos en común tienen entre todos.
 - **¿Cómo hacer que las clases hereden?**: Se engloban todos las propiedades y métodos en una clase/superclase. Las particularidades se construyen en sus propias clases.
 
-# Video 30 - POO VII. Herencia II
+## Video 30 - POO VII. Herencia II
 - Sobre escritura de métodos.
 - **Herencia simple y múltiple**: hereda el constructor de la primera clase asignada en la herencia múltiple (más a la izquierda).
 
-# Video 31 - POO VIII. Herencia III
+## Video 31 - POO VIII. Herencia III
 - Como depende de que clase herede primera, puede heredar su **init** o no. La solución **no elegante** es duplicar ese init que se necesita en el de la clase que va a heredar. La **mejor solución** es utilizar el método **super()**.
 - **super()**: llama al método de la clase padre.
 - **isinstance()**: informa si un objeto es instancia de una clase determinada. Devuelve True o False. **No hace falta utilizar self.**
 
-# Video 32 - POO. Polimorfismo.
+## Video 32 - POO. Polimorfismo.
 - **Polimorfismo**: "muchas formas". Un objeto puede cambiar de forma dependiendo del contexto donde se utilice el método/compotamiento. Se tienen que llamar todos los métodos de la misma clase de la misma manera.
 
-# Video 33 - Métodos de cadenas (strings)
+## Video 33 - Métodos de cadenas (strings)
 - **upper()**: convierte en mayúscula todas las letras de un string.
 - **lower()**: convierte en minúsculas todas las letras de un string.
 - **capitalize()**: string pone la primera letra en mayúscula.
@@ -523,7 +510,7 @@ self.__ruedas = 4
 - **rfind()**: representa el índice de un carácter, pero lo hace contando desde atrás.
 - [Más métodos...](http://pyspanishdoc.sourceforge.net/lib/string-methods.html)
 
-# Video 34 - Módulos
+## Video 34 - Módulos
 - Archivo con extensión .py o .pyc (python compilado), o archivos escritos en C para CPython que posee su propio espacio de nombres y que puede contener variables, funciones, clases e incluso otros módulos.
 - Sirven para organizar y reutilizar el código (modularización y reutilización).
 - ¿Cómo se crean? Es un archivo con extensión .py
@@ -532,13 +519,13 @@ self.__ruedas = 4
     - Si se quiere usar todo el código que hay dentro del módulo, se usa from <módulo> import *. Con el * se reserva un espacio muy grande de memoria porque se guardaría espacio para todo el módulo.
     - Si no encuentra el módulo en el mismo nivel (path) utiliza el **syspath**.
 
-# Video 35 - Paquetes
+## Video 35 - Paquetes
 - Directorios/carpetas donde se almacenan los módulos relacioandos entre si.
 - Se utilizan para organizar y reutilizar código.
 - **¿Cómo se crea?**: Hay que crear una carpeta con un archivo **__init__.py**.
 - Se pueden crear subpaquetes: paquetes dentro de un paquete.
 
-# Video 36 - Paquetes distribuibles
+## Video 36 - Paquetes distribuibles
 - Para que se puedan reutilizar por diferentes personas o diferentes proyectos. 
 - Se pueden enviar por correo o subirlos a una plataforma.
 - Se instala el paquete dentro de Python del SO.
@@ -552,7 +539,7 @@ python3 setup.py sdist
 - **Desinstalar paquete:** pip3 uninstall <nombre-paquete>.tar.gz
 - NOTA: verificar instalación y desinstalación.
 
-# Video 37 - Archivos externos I
+## Video 37 - Archivos externos I
 - Módulo **io**.
 - Objetivos:
     - Persistencia de datos.
@@ -565,21 +552,79 @@ python3 setup.py sdist
     - Manipulación
     - Cierre
 
-# Video 38 - Archivos externos II
+## Video 38 - Archivos externos II
 - Cuando se abre un archivo, la posición es al principio de todo, y al cerrarlo es la última donde se escribió. 
 - Si se utiliza dos veces la functión **read()**, la segunda vez no mostraría nada porque el puntero estaría ubicado en la última posición.
 - Método **seek()**: le decimos donde queremos que se sitúe el puntero.
 - Se puede conseguir con **read()** pero hay un matiz. **seek()** solo posiciona el puntero en el lugar que se especifica y **read()** hace una lectura hasta la posición del puntero que se le indica. Si se ejecuta dos veces el **read()**, uno con parámetro y otro sin, el primero lee hasta la posición X y el segundo lee a partir de donde se encuentra el puntero.
 - Se puede abrir un archivo como lectura y escritura utilizando: **r+**. El cursor se encontrará en la posición **0**.
 
-# Video 39 - Serialización I
+## Video 39 - Serialización I
 - Colecciones y objetos
 - Consiste en guardar en un fichero externo una colección, diccionario u objeto. La particularidad es que se guarda en un fichero externo codificado en código binario.
 - **¿Objetivo?** Si se quiere distribuir un objeto costruido en Python por internet, la distribución se hace más fácil. También para gurdarla en un dispositivo de almacenamiento externo, o guardar en una base de datos.
 - Se requiere la biblioteca **Piclke**.
 
-# Video 40 - Serialización II
+## Video 40 - Serialización II
 - Si se crea y se abre desde otro archivo diferente, fallará. La única solución es copiar toda la definición del objeto en el segundo archivo, usto antes de realizar la lectura (abrirlo).
 
-# Video 41 - Guardado permanente
-- 
+## Video 41 - Guardado permanente
+- No hay notas
+
+## Video 42 - Interfaces gráficas I
+- "Intermediaro entre el programa que se ejecuta y nosotros."
+- Librearía **Tkinter**, **WxPython**, **PyQT**, **PyGTK**.
+    - Installar **Tkinter** => sudo apt-get install python3-tk
+- Estructura de ventana con TKinter
+    - **Raíz**: se conoce como "la ventana". Dentro va un **frame** como organizar/aglutinador de elementos.
+    - **Frame**: dentro de este hay elementos conocidos como **widgets**. Un **Frame** también se considera como **widget**.
+- Una ventana debe permanecer a la escucha de eventos.
+- **mainloop()** debe ir **siempre** al final.
+- Si se cambia la extensión del archivo a **.pyw** (en Windows), no aparece la consola por detrás.
+- [Más info](https://docs.python.org/3.3/library/tk.html)
+
+## Video 42 - Interfaces gráficas II
+
+# Notas
+
+- En Python todo es un objeto. Se puede ver el tipo con la función *type()*.
+    ```python
+    num=5
+    type(num)
+    <class 'int'>
+    
+    text="Hola"
+    type(text)
+    <class 'str'>
+    #Puede tener multisalto utilizando triple comillas dobles (""")
+    
+    coma=5.2
+    type(coma)
+    <class 'float'>
+
+- **__str__**
+    - Sirve para poder imprimir llamando a una clase directamente, sin pasar por su método. Es un método que sirve para obtener la representación de tu objeto como string
+    - [Más info](http://juanpabloaj.com/2016/08/06/Algunos-metodos-especiales-de-clase/)
+
+    ```python
+    class Animal:
+        def __init__(self, nombre):
+            self.nombre = nombre
+
+    perro = Animal('bobby')
+    print(perro.nombre)
+    # bobby
+
+    print(perro)
+    # <__main__.Animal object at 0x1053fab38>
+
+    class Animal:
+        def __init__(self, nombre):
+            self.nombre = nombre
+        def __str__(self):
+            return nombre
+
+    perro = Animal('bobby')
+    print(perro)
+    # bobby
+    ```
