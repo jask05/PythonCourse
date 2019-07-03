@@ -47,6 +47,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 41. Guardado permanente. [Video 41](https://www.youtube.com/watch?v=J3qvf1fTCsU)
 42. Interfaces gráficas I. [Video 42](https://www.youtube.com/watch?v=hTUJC8HsC2I)
 43. Interfaces gráficas II. [Video 43](https://www.youtube.com/watch?v=M80CzDC1Crc)
+44. Interfaces gráficas III. [Video 44](https://www.youtube.com/watch?v=Nf4-gvf-tNg)
 
 # Apuntes
 
@@ -554,9 +555,9 @@ python3 setup.py sdist
 
 ## Video 38 - Archivos externos II
 - Cuando se abre un archivo, la posición es al principio de todo, y al cerrarlo es la última donde se escribió. 
+- Se puede conseguir con **read()** pero hay un matiz. **seek()** solo posiciona el puntero en el lugar que se especifica y **read()** hace una lectura hasta la posición del puntero que se le indica. Si se ejecuta dos veces el **read()**, uno con parámetro y otro sin, el primero lee hasta la posición X y el segundo lee a partir de donde se encuentra el puntero.
 - Si se utiliza dos veces la functión **read()**, la segunda vez no mostraría nada porque el puntero estaría ubicado en la última posición.
 - Método **seek()**: le decimos donde queremos que se sitúe el puntero.
-- Se puede conseguir con **read()** pero hay un matiz. **seek()** solo posiciona el puntero en el lugar que se especifica y **read()** hace una lectura hasta la posición del puntero que se le indica. Si se ejecuta dos veces el **read()**, uno con parámetro y otro sin, el primero lee hasta la posición X y el segundo lee a partir de donde se encuentra el puntero.
 - Se puede abrir un archivo como lectura y escritura utilizando: **r+**. El cursor se encontrará en la posición **0**.
 
 ## Video 39 - Serialización I
@@ -583,7 +584,10 @@ python3 setup.py sdist
 - Si se cambia la extensión del archivo a **.pyw** (en Windows), no aparece la consola por detrás.
 - [Más info](https://docs.python.org/3.3/library/tk.html)
 
-## Video 42 - Interfaces gráficas II
+## Video 43 - Interfaces gráficas II
+- Creación de frames: Raíz (TK) > Frame > Widgets
+
+## Video 44 - Interfaces gráficas III
 
 # Notas
 
