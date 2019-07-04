@@ -48,6 +48,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 42. Interfaces gráficas I. [Video 42](https://www.youtube.com/watch?v=hTUJC8HsC2I)
 43. Interfaces gráficas II. [Video 43](https://www.youtube.com/watch?v=M80CzDC1Crc)
 44. Interfaces gráficas III. [Video 44](https://www.youtube.com/watch?v=Nf4-gvf-tNg)
+45. Interfaces gráficas IV. [Video 45](https://www.youtube.com/watch?v=YRs8j0QGEn0)
 
 # Apuntes
 
@@ -588,6 +589,15 @@ python3 setup.py sdist
 - Creación de frames: Raíz (TK) > Frame > Widgets
 
 ## Video 44 - Interfaces gráficas III
+- Labels: permiten mostrar texto con el cual no se puede interactuar.
+    - Pueden mostrar imagenes.
+```python
+variableLabel = Label(contenedor,opciones)
+```
+
+## Video 45 - Interfaces gráficas VI
+- Widget entry: cuadro de texto.
+- Método grid: construye una tabla para colocar el contenido de forma ordenada.
 
 # Notas
 
