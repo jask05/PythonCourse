@@ -49,6 +49,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 43. Interfaces gráficas II. [Video 43](https://www.youtube.com/watch?v=M80CzDC1Crc)
 44. Interfaces gráficas III. [Video 44](https://www.youtube.com/watch?v=Nf4-gvf-tNg)
 45. Interfaces gráficas IV. [Video 45](https://www.youtube.com/watch?v=YRs8j0QGEn0)
+46. Interfaces gráficas V. [Video 46](https://www.youtube.com/watch?v=nZF9SwhmPRo)
+47. Interfaces gráficas VI. [Video 47](https://www.youtube.com/watch?v=kbTl3DaFJUk)
 
 # Apuntes
 
@@ -598,6 +600,12 @@ variableLabel = Label(contenedor,opciones)
 ## Video 45 - Interfaces gráficas VI
 - Widget entry: cuadro de texto.
 - Método grid: construye una tabla para colocar el contenido de forma ordenada.
+
+# Video 46 - Interfaces gráficas V
+- Widets: text y button
+
+# Video 47 - Interfaces gráficas VI
+- Calculadora
 
 # Notas
 
