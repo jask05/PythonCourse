@@ -51,6 +51,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 45. Interfaces gráficas IV. [Video 45](https://www.youtube.com/watch?v=YRs8j0QGEn0)
 46. Interfaces gráficas V. [Video 46](https://www.youtube.com/watch?v=nZF9SwhmPRo)
 47. Interfaces gráficas VI. [Video 47](https://www.youtube.com/watch?v=kbTl3DaFJUk)
+48. Interfaces gráficas VII. [Video 48](https://www.youtube.com/watch?v=oIzt6ESA7nU)
 
 # Apuntes
 
@@ -605,6 +606,9 @@ variableLabel = Label(contenedor,opciones)
 - Widets: text y button
 
 # Video 47 - Interfaces gráficas VI
+- Calculadora
+
+# Video 48 - Interfaces gráficas VII
 - Calculadora
 
 # Notas
