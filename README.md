@@ -52,6 +52,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 46. Interfaces gráficas V. [Video 46](https://www.youtube.com/watch?v=nZF9SwhmPRo)
 47. Interfaces gráficas VI. [Video 47](https://www.youtube.com/watch?v=kbTl3DaFJUk)
 48. Interfaces gráficas VII. [Video 48](https://www.youtube.com/watch?v=oIzt6ESA7nU)
+49. 
 
 # Apuntes
 
@@ -609,7 +610,9 @@ variableLabel = Label(contenedor,opciones)
 - Calculadora
 
 # Video 48 - Interfaces gráficas VII
-- Calculadora
+- Calculadora: insertando número
+- Funciones anóminas (lambda): se simplifican la ejecución de funciones de manera anónima.
+
 
 # Notas
 
