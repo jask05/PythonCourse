@@ -637,8 +637,8 @@ variableLabel = Label(contenedor,opciones)
 ```python
 from tkinter import messagebox
 ```
-
 # Video 54 - Interfaces gráficas XII - Ventanas emergentes: abrir archivos
+- Filedialog: [Más info](https://pythonspot.com/tk-file-dialogs/)
 
 #####################################
 #       HACER CALCULADORA           #
