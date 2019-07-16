@@ -1,7 +1,23 @@
-Lorem Ipsum is simply dummy
- text of the printing and typesetting industry.
- Lorem Ipsum has been the industry's
- standard dummy text ever since the 1500s, 
- when an unknown printer took a galley
- of type and scrambled it to make a type specimen book.
- Seguimos con el contenido adicionado después.
+def el_resultado():
+
+	global resultado
+	global operacion
+	global contador_resta
+	global contador_multi
+	global contador_divi
+	
+	if operacion=="suma":
+		numeroPantalla.set(resultado+int(numeroPantalla.get()))
+		resultado=0
+	elif operacion=="resta":
+		numeroPantalla.set(int(resultado)-int(numeroPantalla.get()))
+		resultado=0
+		contador_resta=0
+	elif operacion=="multiplicacion":
+		numeroPantalla.set(int(resultado)*int(numeroPantalla.get()))
+		resultado=0
+		contador_multi=0
+	elif operacion=="division":
+		numeroPantalla.set(int(resultado)/int(numeroPantalla.get()))
+		resultado=0
+		contador_divi=0

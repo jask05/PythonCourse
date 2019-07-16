@@ -52,7 +52,12 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 46. Interfaces gráficas V. [Video 46](https://www.youtube.com/watch?v=nZF9SwhmPRo)
 47. Interfaces gráficas VI. [Video 47](https://www.youtube.com/watch?v=kbTl3DaFJUk)
 48. Interfaces gráficas VII. [Video 48](https://www.youtube.com/watch?v=oIzt6ESA7nU)
-49. 
+49. Interfaces gráficas VIII. [Video 49](https://www.youtube.com/watch?v=oIzt6ESA7nU)
+50. Interfaces gráficas IX - Radiobuttons. [Video 50](https://www.youtube.com/watch?v=YfYUOUGMaXU)
+51. Interfaces gráfficas X - Checkbuttons. [Video 51](https://www.youtube.com/watch?v=TzeU61X-dnI)
+52. Interfaces gráfficas XI - Menu. [Video 52](https://www.youtube.com/watch?v=Dv1ALaWwScI)
+53. Interfaces gráfficas XII - Ventanas emergentes. [Video 53](https://www.youtube.com/watch?v=xUGUglpaTJc)
+54. Interfaces gráfficas XIII - Ventanas emergentes - Abrir archivos. [Video 54](https://www.youtube.com/watch?v=TmQZBzwIMGk)
 
 # Apuntes
 
@@ -589,30 +594,57 @@ python3 setup.py sdist
 - Si se cambia la extensión del archivo a **.pyw** (en Windows), no aparece la consola por detrás.
 - [Más info](https://docs.python.org/3.3/library/tk.html)
 
-## Video 43 - Interfaces gráficas II
+## Video 43 - Interfaces gráficas II - Frames
 - Creación de frames: Raíz (TK) > Frame > Widgets
 
-## Video 44 - Interfaces gráficas III
+## Video 44 - Interfaces gráficas III - Labels
 - Labels: permiten mostrar texto con el cual no se puede interactuar.
     - Pueden mostrar imagenes.
 ```python
 variableLabel = Label(contenedor,opciones)
 ```
 
-## Video 45 - Interfaces gráficas VI
+## Video 45 - Interfaces gráficas VI - Cuadro de texto
 - Widget entry: cuadro de texto.
 - Método grid: construye una tabla para colocar el contenido de forma ordenada.
 
-# Video 46 - Interfaces gráficas V
+# Video 46 - Interfaces gráficas V - Text y buttons
 - Widets: text y button
 
-# Video 47 - Interfaces gráficas VI
+# Video 47 - Interfaces gráficas VI - Calculadora
 - Calculadora
 
-# Video 48 - Interfaces gráficas VII
+# Video 48 - Interfaces gráficas VII - Calculadora
 - Calculadora: insertando número
 - Funciones anóminas (lambda): se simplifican la ejecución de funciones de manera anónima.
 
+# Video 49 - Interfaces gráficas VIII - Calculadora
+- Calculadora: añadida resta, multiplicación y división.
+
+# Video 50 - Interfaces gráficas IX - Radiobuttons
+- Radiobuttons
+    - Se le debe asignar una variable para que se pueda seleccionar solo una opción.
+
+# Video 51 - Interfaces gráficas X - Checkbuttons
+- CheckButtons
+
+# Video 52 - Interfaces gráficas XI - Menú
+- Widget: menu
+
+# Video 53 - Interfaces gráficas XII - Ventanas emergentes
+- Ventanas emergentes
+    - Hay que importarlas de forma independiente
+```python
+from tkinter import messagebox
+```
+
+# Video 54 - Interfaces gráficas XII - Ventanas emergentes: abrir archivos
+
+#####################################
+#       HACER CALCULADORA           #
+#       AL TERMINAR EL MÓDULO       #
+#       DE INTERFACES GRÁFICAS      #
+#####################################
 
 # Notas
 
