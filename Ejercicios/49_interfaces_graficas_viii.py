@@ -10,6 +10,10 @@ miFrame.pack()
 
 operacion = ""
 resultado = 0
+contador_resta = 0
+contador_multiplicacion = 0
+contador_division = 0
+num1 = 0
 
 # Mejoras
 # - Solo se puede usar una coma.
@@ -18,8 +22,6 @@ resultado = 0
 # ------------------ Pantalla ------------------ #
 
 numeroPantalla = StringVar()
-# Debug
-debugPantalla = StringVar()
 
 pantalla = Entry(miFrame, textvariable=numeroPantalla) # state="readonly"
 pantalla.grid(row=1, column=1, pady=2, columnspan=4)
@@ -28,22 +30,32 @@ pantalla.config(background="black", fg="#03f943", justify="right")
 # ------------------ Pulsaciones teclado ------------------ #
 
 def numeroPulsado(num):
-    # getNumPantalla = numeroPantalla.get()
-    # if num == "0":
-    #     if getNumPantalla != "":
-    #         numeroPantalla.set(getNumPantalla + num)
-    # else:
-    #     numeroPantalla.set(getNumPantalla + num)
     global operacion
 
     if operacion != "":
         numeroPantalla.set(num)
-        operacion = "" # comienza a concatenar de nuevo
+        # operacion = "" # comienza a concatenar de nuevo
     else:
-        numeroPantalla.set(numeroPantalla.get() + num)
+        if numeroPantalla.get() == "0":
+            numeroPantalla.set(num)
+        else:
+            numeroPantalla.set(numeroPantalla.get() + num)
 
 def delNumeros():
-    numeroPantalla.set("")
+    global operacion
+    global resultado
+    global contador_resta
+    global contador_multiplicacion
+    global contador_division
+    global num1
+
+    operacion = ""
+    resultado = 0
+    contador_resta = 0
+    contador_multiplicacion = 0
+    contador_division = 0
+    num1 = 0
+    numeroPantalla.set(resultado)
 
 def sumar(num):
     global operacion
@@ -54,19 +66,104 @@ def sumar(num):
 
     numeroPantalla.set(resultado)
 
-def restar():
-    pass
+def restar(num):
+    global operacion
+    global resultado
+    global contador_resta
+    global num1
 
-def multiplicar():
-    pass
+    if operacion == "suma":
+        num = resultado + int(num)
+    elif operacion == "multiplicacion":
+        num = resultado * int(num)
+    elif operacion == "division":
+        num = resultado / int(num)
 
-def dividir():
-    pass
+    if contador_resta == 0:
+        num1 = int(num)
+        
+        if resultado != 0:
+            resultado = num1
+        else:
+            resultado = resultado - num1
+    else:
+        if contador_resta == 1:
+            resultado = int(num1) - int(num)
+        else:
+            resultado = int(resultado) - int(num)
+
+        numeroPantalla.set(resultado)
+        resultado = numeroPantalla.get()
+
+    contador_resta += 1
+    operacion = "resta"
+
+def multiplicar(num):
+    global operacion
+    global resultado
+    global contador_multiplicacion
+    global num1
+
+    if contador_multiplicacion == 0:
+        num1 = int(num)
+        resultado = num1
+    else:
+        if contador_multiplicacion == 1:
+            resultado = int(num1) * int(num)
+        else:
+            resultado = int(resultado) * int(num)
+
+        numeroPantalla.set(resultado)
+        resultado = numeroPantalla.get()
+
+    contador_multiplicacion += 1
+    operacion = "multiplicacion"
+
+def dividir(num):
+    global operacion
+    global resultado
+    global contador_division
+    global num1
+
+    if contador_division == 0:
+        num1 = int(num)
+        resultado = num1
+    else:
+        if contador_division == 1:
+            resultado = int(num1) / int(num)
+        else:
+            resultado = int(resultado) / int(num)
+
+        numeroPantalla.set(resultado)
+        resultado = numeroPantalla.get()
+
+    contador_division += 1
+    operacion = "division"
 
 def el_resultado():
     global resultado
-    numeroPantalla.set(resultado + int(numeroPantalla.get()))
-    resultado = 0
+    global operacion
+    global contador_resta
+    global contador_multiplicacion
+    global contador_division
+    
+    numeroPantallaGet = int(numeroPantalla.get())
+
+    if operacion == "suma":
+        numeroPantalla.set(int(resultado) + numeroPantallaGet)
+        resultado = 0
+    elif operacion == "resta":
+        numeroPantalla.set(int(resultado) - numeroPantallaGet)
+        resultado = 0
+        contador_resta = 0
+    elif operacion == "multiplicacion":
+        numeroPantalla.set(int(resultado) * numeroPantallaGet)
+        resultado = 0
+        contador_multiplicacion = 0
+    elif operacion == "division":
+        numeroPantalla.set(int(resultado) / numeroPantallaGet)
+        resultado = 0
+        contador_division = 0
 
 # ------------------ Fila 0 ------------------ #
 botonDel = Button(miFrame, text="Delete all", width=24, command=lambda:delNumeros())
@@ -82,7 +179,7 @@ boton8.grid(row=3, column=2)
 boton9 = Button(miFrame, text="9", width=3, command=lambda:numeroPulsado("9"))
 boton9.grid(row=3, column=3)
 
-botonD = Button(miFrame, text="/", width=3, command=lambda:dividir())
+botonD = Button(miFrame, text="/", width=3, command=lambda:dividir(numeroPantalla.get()))
 botonD.grid(row=3, column=4)
 
 # ------------------ Fila 2 ------------------ #
@@ -95,7 +192,7 @@ boton5.grid(row=4, column=2)
 boton6 = Button(miFrame, text="6", width=3, command=lambda:numeroPulsado("6"))
 boton6.grid(row=4, column=3)
 
-botonM = Button(miFrame, text="x", width=3, command=lambda:multiplicar())
+botonM = Button(miFrame, text="x", width=3, command=lambda:multiplicar(numeroPantalla.get()))
 botonM.grid(row=4, column=4)
 
 # ------------------ Fila 3 ------------------ #
@@ -108,7 +205,7 @@ boton2.grid(row=5, column=2)
 boton3 = Button(miFrame, text="3", width=3, command=lambda:numeroPulsado("3"))
 boton3.grid(row=5, column=3)
 
-botonR = Button(miFrame, text="-", width=3, command=lambda:restar())
+botonR = Button(miFrame, text="-", width=3, command=lambda:restar(numeroPantalla.get()))
 botonR.grid(row=5, column=4)
 
 # ------------------ Fila 4 ------------------ #

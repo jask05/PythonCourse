@@ -58,6 +58,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 52. Interfaces gráfficas XI - Menu. [Video 52](https://www.youtube.com/watch?v=Dv1ALaWwScI)
 53. Interfaces gráfficas XII - Ventanas emergentes. [Video 53](https://www.youtube.com/watch?v=xUGUglpaTJc)
 54. Interfaces gráfficas XIII - Ventanas emergentes - Abrir archivos. [Video 54](https://www.youtube.com/watch?v=TmQZBzwIMGk)
+55. BBDD I. [Video 55](https://www.youtube.com/watch?v=ZJuVQ9jUg-A)
 
 # Apuntes
 
@@ -639,6 +640,38 @@ from tkinter import messagebox
 ```
 # Video 54 - Interfaces gráficas XII - Ventanas emergentes: abrir archivos
 - Filedialog: [Más info](https://pythonspot.com/tk-file-dialogs/)
+
+# VIdeo 55 - BBDD I
+- SQL (Structured Query Language)
+    - SQL Server
+    - Oracle
+    - MySQL
+    - SQLite
+        - ¿Que es?
+            - Sistema de gestión de BBDD relacional.
+            - Escrito en C, código abierto.
+            - Forma parte integral del programa.
+            - Se guarda como un único fichero en el host.
+            - Tool: Sqlite browser.
+        - Ventajas
+            - Ocupa poco espacio en disco y memoria.
+            - Eficiente y rápido.
+            - Multiplataforma.
+            - Sin adminsitración / configuración.
+            - Dominio público, gratis.
+        - Inconvenientes
+            - No admite cláusulas anidadas (where).
+            - No existen usuarios (no se puede acceder simultaneamente por varios usuarios a la vez).
+            - Falta de clave foránea cuando se crea en modo consola.
+    - PostgresSQL
+- Pasos a seguir para conectar con la BBDD
+    - Abrir-crear conexión.
+    - Crear puntero.
+    - Ejecutar query SQL.
+    - Manejar resultados de la query.
+        - Insertar, leer, actualizar, borrar. (Create, Read, Update, Delete).
+    - Cerrar puntero.
+    - Cerrar conexión.
 
 #####################################
 #       HACER CALCULADORA           #
