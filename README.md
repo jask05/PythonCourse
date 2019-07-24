@@ -59,6 +59,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 53. Interfaces gráfficas XII - Ventanas emergentes. [Video 53](https://www.youtube.com/watch?v=xUGUglpaTJc)
 54. Interfaces gráfficas XIII - Ventanas emergentes - Abrir archivos. [Video 54](https://www.youtube.com/watch?v=TmQZBzwIMGk)
 55. BBDD I. [Video 55](https://www.youtube.com/watch?v=ZJuVQ9jUg-A)
+56. BBDD II. [Video 56](https://www.youtube.com/watch?v=eM0MkDc34qo)
+57. BBDD III. [Video 57](https://www.youtube.com/watch?v=HVd6mPiD3pc)
 
 # Apuntes
 
@@ -672,6 +674,11 @@ from tkinter import messagebox
         - Insertar, leer, actualizar, borrar. (Create, Read, Update, Delete).
     - Cerrar puntero.
     - Cerrar conexión.
+
+# Video 56 - BBDD II
+- Insertar y leer un lote de registros
+
+# Video 57 - BBDD III
 
 #####################################
 #       HACER CALCULADORA           #
