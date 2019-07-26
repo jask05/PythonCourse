@@ -61,6 +61,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 55. BBDD I. [Video 55](https://www.youtube.com/watch?v=ZJuVQ9jUg-A)
 56. BBDD II. [Video 56](https://www.youtube.com/watch?v=eM0MkDc34qo)
 57. BBDD III. [Video 57](https://www.youtube.com/watch?v=HVd6mPiD3pc)
+58. BBDD IV. [Video 58](https://www.youtube.com/watch?v=m_FzVf9JTV8)
 
 # Apuntes
 
@@ -643,7 +644,7 @@ from tkinter import messagebox
 # Video 54 - Interfaces gráficas XII - Ventanas emergentes: abrir archivos
 - Filedialog: [Más info](https://pythonspot.com/tk-file-dialogs/)
 
-# VIdeo 55 - BBDD I
+# Video 55 - BBDD I
 - SQL (Structured Query Language)
     - SQL Server
     - Oracle
@@ -679,12 +680,10 @@ from tkinter import messagebox
 - Insertar y leer un lote de registros
 
 # Video 57 - BBDD III
+- Claves principales BBDD
 
-#####################################
-#       HACER CALCULADORA           #
-#       AL TERMINAR EL MÓDULO       #
-#       DE INTERFACES GRÁFICAS      #
-#####################################
+# Video 58 - BBDD IV
+
 
 # Notas
 
