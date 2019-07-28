@@ -62,6 +62,7 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 56. BBDD II. [Video 56](https://www.youtube.com/watch?v=eM0MkDc34qo)
 57. BBDD III. [Video 57](https://www.youtube.com/watch?v=HVd6mPiD3pc)
 58. BBDD IV. [Video 58](https://www.youtube.com/watch?v=m_FzVf9JTV8)
+59. Práctica guiada I. [Video 59](https://www.youtube.com/watch?v=E0OqddzjFUY)
 
 # Apuntes
 
@@ -683,7 +684,10 @@ from tkinter import messagebox
 - Claves principales BBDD
 
 # Video 58 - BBDD IV
+- Cláusula UNIQUE.
+- Operaciones CRUD.
 
+# Video 59 - Práctica guiada I
 
 # Notas
 
