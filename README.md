@@ -688,6 +688,8 @@ from tkinter import messagebox
 - Operaciones CRUD.
 
 # Video 59 - Práctica guiada I
+- Explicación de la práctica.
+
 
 # Notas
 
