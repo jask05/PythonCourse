@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
+import sqlite3
 
 root = Tk()
 root.title("Ejercicio Guiado")
@@ -11,7 +12,20 @@ root.title("Ejercicio Guiado")
 
 # Conectar BBDD
 def conectarBBDD():
-    pass
+	try:
+		miConexion = sqlite3.connect("59_ejercicio_guiado_i.sqlite3")
+		miCursor = miConexion.cursor()
+		miCursor.execute('''
+				CREATE TABLE DatosUsuarios (
+				nombre VARCHAR(50),
+				apellido VARCHAR(20),
+				direccion VARCHAR(50),
+				contrasenia VARCHAR(50),
+				comentarios VARCHAR(100))
+				''')
+	except:
+		messagebox.showwarning("Base de datos", "¡La base de datos ya existe!")
+
 
 # Salir del programa
 def salirPrograma():
@@ -46,7 +60,7 @@ barraMenu.add_cascade(label="CRUD", menu=crudMenu)
 barraMenu.add_cascade(label="Ayuda", menu=ayudaMenu)
 
 # Elementos hijos Archivo
-bbddMenu.add_command(label="Conectar BBDD")
+bbddMenu.add_command(label="Conectar BBDD", command=conectarBBDD)
 bbddMenu.add_command(label="Salir", command=salirPrograma)
 
 # Elementos hijos Herramientas
@@ -101,6 +115,16 @@ passLabel.grid(row=4, column=0, sticky="e", padx=10, pady=10)
 cuadroPass = Entry(miFrame)
 cuadroPass.grid(row=4, column=1, padx=10, pady=10)
 cuadroPass.config(show="x")
+
+# Comentarios
+comentarioLabel = Label(miFrame, text="Comentario")
+comentarioLabel.grid(row=5, column=0, sticky="e", padx=10, pady=10)
+
+cuadroComentario = Text(miFrame, width=16, height=5)
+cuadroComentario.grid(row=5, column=1, padx=10, pady=10)
+scrollVert = Scrollbar(miFrame, command=cuadroComentario.yview)
+scrollVert.grid(row=5, column=2, padx=0, pady=10, sticky="nsew")
+cuadroComentario.config(yscrollcommand=scrollVert.set)
 
 # Botones CRUD
 botonCreate = Button(botonesFrame, text="Crear")
