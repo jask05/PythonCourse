@@ -724,7 +724,11 @@ from tkinter import messagebox
 - Tambien se les denomina como funciones "on demand, on the go, online".
 
 # Video 67 - Función Filter
-- 
+- Grupo de funciones denominados funciones de orden superior.
+- Permite usar paradigma de programación: programación funcional.
+- POO o programación funcional.
+- Filter: comprueba que los elementos de una secuencia (lista) cumple una condición, devolviendo un iterador con los elementos que cumplen dicha función.
+- Se utiliza para filtrar objetos.
 
 
 
@@ -744,6 +748,18 @@ from tkinter import messagebox
     coma=5.2
     type(coma)
     <class 'float'>
+
+- **__init__**
+```python
+class Empleado:
+    def __init__(self, nombre, cargo, salario):
+        self.nombre = nombre
+        self.cargo = cargo
+        self.salario = salario
+```
+    - El parámetro self se refiere al objeto instanciado de esa clase sobre el cual se está invocando dicho método.
+    - Sin "self" la variable pasa a serlocal para ese método, pero con "self" se pueden ese método dentro de toda la clase.
+    - [Más info](https://es.stackoverflow.com/questions/90357/para-qu%C3%A9-se-utiliza-self-en-poo-en-python)
 
 - **__str__**
     - Sirve para poder imprimir llamando a una clase directamente, sin pasar por su método. Es un método que sirve para obtener la representación de tu objeto como string
