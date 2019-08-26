@@ -62,7 +62,15 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 56. BBDD II. [Video 56](https://www.youtube.com/watch?v=eM0MkDc34qo)
 57. BBDD III. [Video 57](https://www.youtube.com/watch?v=HVd6mPiD3pc)
 58. BBDD IV. [Video 58](https://www.youtube.com/watch?v=m_FzVf9JTV8)
-59. Práctica guiada I. [Video 59](https://www.youtube.com/watch?v=E0OqddzjFUY)
+59. Práctica guiada I - Introducción. [Video 59](https://www.youtube.com/watch?v=E0OqddzjFUY)
+60. Práctica guiada II. [Video 60](https://www.youtube.com/watch?v=o8E869dmK3U)
+61. Práctica guiada III - Grid. [Video 61](https://www.youtube.com/watch?v=OJzFGgOSpvI)
+62. Práctica guiada IV - Conexión BBDD y Salir. [Video 62](https://www.youtube.com/watch?v=5XPLCDp7nDk)
+63. Práctica guiada V - Limpiar campos e insertar registros. [Video 63](https://www.youtube.com/watch?v=mNzHPglBuUk)
+64. Práctica guiada VI - Leer y actualizar registros. [Video 64](https://www.youtube.com/watch?v=nx3OE31y0IY)
+65. Práctica guiada VII - Borrar registros y consultas parametrizadas. [Video 65](https://www.youtube.com/watch?v=nj-alxd7YvM)
+66. Funciones Lambda. [Video 66](https://www.youtube.com/watch?v=tfYLcHbjc_A)
+67. Funciones Filter. [Video 67](https://www.youtube.com/watch?v=mTJKU7IxL0U)
 
 # Apuntes
 
@@ -689,6 +697,35 @@ from tkinter import messagebox
 
 # Video 59 - Práctica guiada I
 - Explicación de la práctica.
+
+# Video 60 - Práctica guiada II
+- Grid.
+
+# Video 61 - Práctica guiada III
+- Aplicación gráfica CRUD.
+
+# Video 62 - Práctica guiada IV
+- Conexión a BBDD y salir de la aplicación.
+
+# Video 63 - Práctica guiada V
+- Limpiar campos e insertar registros
+
+# Video 64 - Práctica guiada VI
+- Leer y actualizar registros.
+
+# Video 65 - Práctica guiada VII
+- Borrar registros y consultas parametrizadas para la creación y la actualización.
+
+# Video 66 - Funciones Lambda
+- Función lambda = función anónima.
+- Se utiliza para abreviar, ahorrar tiempo y que la sintáxis sea más ligera.
+- Todo lo que se puede hacer con una función lambda se puede hacer con una función normal, pero no al revés.
+- No se pueden utilizar con bucles o condicionales, solo podrá devolver un cálculo.
+- Tambien se les denomina como funciones "on demand, on the go, online".
+
+# Video 67 - Función Filter
+- 
+
 
 
 # Notas

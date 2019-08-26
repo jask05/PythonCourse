@@ -12,7 +12,7 @@ root.title("Ejercicio Guiado")
 
 # Conectar BBDD
 
-dbname = "60_ejercicio_guiado_ii.sqlite3"
+dbname = "65_ejercicio_guiado_vii.sqlite3"
 
 def conectarBBDD():
 	try:
@@ -44,14 +44,13 @@ def createContent():
 	miCursor 	= miConexion.cursor()
 
 	# Re-asignación
-	name 	= nombreSV.get()
-	surname = apellidoSV.get()
-	email 	= emailSV.get()
-	passwd 	= passSV.get()
-	comment = cuadroComentario.get("1.0", END) # Donde empieza a capturar texto y donde termina
+	datos 	= nombreSV.get(), apellidoSV.get(), emailSV.get(), passSV.get(), cuadroComentario.get("1.0", END)
 
 	# Insertar elementos
-	miCursor.execute("INSERT INTO DatosUsuarios VALUES(NULL, '" + name + "', '" + surname + "', '" + email + "', '" + passwd + "', '" + comment + "')")
+	# miCursor.execute("INSERT INTO DatosUsuarios VALUES(NULL, '" + name + "', '" + surname + "', '" + email + "', '" + passwd + "', '" + comment + "')")
+
+	# Sentencia parametrizada
+	miCursor.execute("INSERT INTO DatosUsuarios VALUES(NULL,?,?,?,?,?)", (datos))
 	miConexion.commit()
 	# Cerrar conexión
 	miConexion.close()
@@ -93,33 +92,35 @@ def updateContent():
 
 	# Re-asignación
 	idUsuario 	= idSV.get()
-	name 		= nombreSV.get()
-	surname 	= apellidoSV.get()
-	email 		= emailSV.get()
-	passwd 		= passSV.get()
-	comment 	= cuadroComentario.get("1.0", END) # Donde empieza a capturar texto y donde termina
+	datos = nombreSV.get(), apellidoSV.get(), emailSV.get(), passSV.get(), cuadroComentario.get("1.0", END)
 
-	miCursor.execute("UPDATE DatosUsuarios SET nombre = '" + name + "', apellido = '" + surname + "', direccion = '" + email + "', contrasenia = '" + passwd + "', comentarios = '" + comment + "' WHERE id=" + idUsuario)
-	print("UPDATE DatosUsuarios SET nombre = '" + name + "', apellido = '" + surname + "', direccion = '" + email + "', contrasenia = '" + passwd + "', comentarios = '" + comment + "' WHERE id=" + idUsuario)
+	# miCursor.execute("UPDATE DatosUsuarios SET nombre = '" + name + "', apellido = '" + surname + "', direccion = '" + email + "', contrasenia = '" + passwd + "', comentarios = '" + comment + "' WHERE id=" + idUsuario)
+	# Sentencia parametrizada
+	miCursor.execute("UPDATE DatosUsuarios SET nombre=?, apellido=?, email=?, contrasenia=?, comentarios=? WHERE id=" + idUsuario, (datos))
+	miConexion.commit()
+
 	miConexion.commit()
 	messagebox.showinfo("BBDD", "Registro '" + idUsuario + "' actualizado correctamente.")
 
-	# if not usuarioBD:
-	# 	messagebox.showerror("Error de búsqueda", "El usuario que intenta buscar no existe.")
-	# 	cleanContent()
-	# else:
-
-	# 	for usuario in usuarioBD:
-	# 		nombreSV.set(usuario[0])
-	# 		apellidoSV.set(usuario[1])
-	# 		emailSV.set(usuario[2])
-	# 		passSV.set(usuario[3])
-	# 		cuadroComentario.insert("1.0", usuario[4])
-
-	# miConexion.commit()
-
 def deleteContent():
-    pass
+	miConexion 	= sqlite3.connect(dbname)
+	miCursor 	= miConexion.cursor()
+	idUsuario 	= idSV.get()
+
+	miCursor.execute("SELECT * FROM DatosUsuarios WHERE id=" + idUsuario)
+	usuarioBD = miCursor.fetchall()
+
+	if not usuarioBD:
+		messagebox.showerror("Error de búsqueda", "El usuario que intenta borrar no existe.")
+		cleanContent()
+	else:
+		confirmarBorrado = messagebox.askokcancel("Borrado de datos", "¿Está seguro que desea borrar los datos asociados al identificador '" + idUsuario + "'?")
+		
+		if confirmarBorrado == "yes" or confirmarBorrado == True:
+			miCursor.execute("DELETE FROM DatosUsuarios WHERE id=" + idUsuario)
+
+			miConexion.commit()
+			messagebox.showinfo("BBDD", "El registro '" + idUsuario + "' se ha borrado correctamente.")
 
 
 # Limpia el contenido de los cuadros
@@ -168,7 +169,7 @@ borrarMenu.add_command(label="Limpiar campos", command=cleanContent)
 crudMenu.add_command(label="Crear", command=createContent)
 crudMenu.add_command(label="Leer", command=readContent)
 crudMenu.add_command(label="Actualizar", command=updateContent)
-crudMenu.add_command(label="Borrar")
+crudMenu.add_command(label="Borrar", command=deleteContent)
 
 # Elementos hijos Ayuda
 ayudaMenu.add_command(label="Licencia")
@@ -238,7 +239,7 @@ botonCreate = Button(botonesFrame, text="Leer", command=readContent)
 botonCreate.grid(row=5, column=1, padx=5, pady=5)
 botonCreate = Button(botonesFrame, text="Actualizar", command=updateContent)
 botonCreate.grid(row=5, column=2, padx=5, pady=5)
-botonCreate = Button(botonesFrame, text="Eliminar")
+botonCreate = Button(botonesFrame, text="Eliminar", command=deleteContent)
 botonCreate.grid(row=5, column=3, padx=5, pady=5)
 
 root.mainloop()
