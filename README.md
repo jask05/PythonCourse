@@ -69,8 +69,10 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 63. Práctica guiada V - Limpiar campos e insertar registros. [Video 63](https://www.youtube.com/watch?v=mNzHPglBuUk)
 64. Práctica guiada VI - Leer y actualizar registros. [Video 64](https://www.youtube.com/watch?v=nx3OE31y0IY)
 65. Práctica guiada VII - Borrar registros y consultas parametrizadas. [Video 65](https://www.youtube.com/watch?v=nj-alxd7YvM)
-66. Funciones Lambda. [Video 66](https://www.youtube.com/watch?v=tfYLcHbjc_A)
-67. Funciones Filter. [Video 67](https://www.youtube.com/watch?v=mTJKU7IxL0U)
+66. Función Lambda. [Video 66](https://www.youtube.com/watch?v=tfYLcHbjc_A)
+67. Función Filter. [Video 67](https://www.youtube.com/watch?v=mTJKU7IxL0U)
+68. Función Map. [Video 68](https://www.youtube.com/watch?v=4dkjpHI6vpA)
+69. Expresiones Regulares I. [Video 69](https://www.youtube.com/watch?v=qpwn3gRtxCo)
 
 # Apuntes
 
@@ -409,7 +411,7 @@ def generarNumeros():
 - Cuando se utiliza **yield from** lo que se hace es simplificar el código de los generadores en el caso de utilizar bucles anidados.
 - Se parece un array de 2 dimensiones.
 
-    ```python
+```python
 # Cuando se coloca un asterisco se indica que recibe nº
 # indeterminado de elementos y también se le indica
 # que estos argumentos serán tuplas
@@ -730,7 +732,18 @@ from tkinter import messagebox
 - Filter: comprueba que los elementos de una secuencia (lista) cumple una condición, devolviendo un iterador con los elementos que cumplen dicha función.
 - Se utiliza para filtrar objetos.
 
+# Video 68 - Función Map
+- Aplica una función a cada elemento de una lista iterable (listas, tuplas, etc) devolviendo una lista con los resultados.
 
+# Video 69 - Expresiones regulares I
+- **¿Qué son?**: "mini-lenguaje de programación dentro de otro lencuaje". Secuencia de caracteres que forman un patrón que sirven para realizar búsquedas (textos).
+- Sintáxis
+- Ejemplos sencillos
+	1. Buscar un texto que se ajuste a un formato determinado (email, dominio, etc).
+	2. Buscar si existe (o no) una cadena de caracteres dentro de un texto.
+	3. Contar el número de coincidencias dentro de un texto.
+	4. Etcétera.
+- [Más info](https://docs.python.org/3/howto/regex.html)
 
 # Notas
 
@@ -787,3 +800,21 @@ class Empleado:
     print(perro)
     # bobby
     ```
+
+- **Argparser**
+    - Se utiliza para hacer más amigables los scripts y poder mostrar información de argumentos a utilizar.
+
+```python
+# When you created the argument
+arg4 = parser.add_argument("-c", "--check", help="performance metrics",action="store_true", dest="performance")
+
+# The dest paramter told argparse to use a variable named performance, not check. Change your code to:
+if args.performance:
+    print("Check the performance of the server")
+# or remove the dest param.
+```
+
+    - Más info
+        - [Documentación oficial](https://docs.python.org/3/library/argparse.html)
+		- [Explicación sencilla de como funciona](https://towardsdatascience.com/learn-enough-python-to-be-useful-argparse-e482e1764e05https://www.youtube.com/watch?v=4dkjpHI6vpA&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=68)
+        - [Explicación de la opción "dest"](https://stackoverflow.com/questions/37126551/attributeerror-namespace-object-has-no-attribute-check)
