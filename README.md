@@ -73,6 +73,9 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 67. Función Filter. [Video 67](https://www.youtube.com/watch?v=mTJKU7IxL0U)
 68. Función Map. [Video 68](https://www.youtube.com/watch?v=4dkjpHI6vpA)
 69. Expresiones Regulares I. [Video 69](https://www.youtube.com/watch?v=qpwn3gRtxCo)
+70. Expresiones Regulares II. [Video 70](https://www.youtube.com/watch?v=V8316ao08tQ)
+71. Expresiones Regulares III. [Video 71](https://www.youtube.com/watch?v=Q4vXCQd1zwc)
+72. Expresiones Regulares IV. [Video 72](https://www.youtube.com/watch?v=u3WBRgpxQcc)
 
 # Apuntes
 
@@ -745,6 +748,28 @@ from tkinter import messagebox
 	4. Etcétera.
 - [Más info](https://docs.python.org/3/howto/regex.html)
 
+# Video 70 - Expresiones regulares II
+- Metacaracteres (caracteres comodí)
+	- Anclas (permiten encontrar coincidencias de texto al comienzo o al final) y clases de caracteres.
+		- **^**: Comienza por...
+		- **$**: termina por...
+		- **[]**: clases de caracteres. Los elementos que se pongan dentro de los corchetes serán patrones de búsqueda dentro de un texto.
+			- **[sfg]**: buscará si el/los textos contienen los caracteres **sfg** pero **NO** en ese órden, simplemente si en un texto se encuentran esos caracteres.
+			- **niñ[oa]s**: contiene **niñ** y puede proseguir por **o** u **a**, seguido de **s**.
+
+# Video 71 - Expresiones regulares III
+- **Rangos**: permiten buscar elementos dentro de una lista que contengan un rango de caracteres, números, que comiencen o terminen por un rango de caracteres o números, etc. Distingue entre mayúsculas y minúsculas.
+	- **Elementos entre la o y la t:** [o-t]
+	- **Rango negado (diferente)**: [^0-3]
+
+# Video 72 - Expresiones regulares IV
+- Funciones del módulo **re**:
+	- **Match**: busca si hay coincidencias en un patrón de búsqueda al **comienzo**  de una cadena de texto.
+	- **Search**: busca en toda la cadena de texto revisando si el patrón de búsqueda se cumple o no.
+	- **Comodines**
+		- **Punto .**: sustituye a un único caracter.
+		- **\d**: si la cadena comienza (o no) por un número.
+
 # Notas
 
 - En Python todo es un objeto. Se puede ver el tipo con la función *type()*.
@@ -818,3 +843,8 @@ if args.performance:
         - [Documentación oficial](https://docs.python.org/3/library/argparse.html)
 		- [Explicación sencilla de como funciona](https://towardsdatascience.com/learn-enough-python-to-be-useful-argparse-e482e1764e05https://www.youtube.com/watch?v=4dkjpHI6vpA&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS&index=68)
         - [Explicación de la opción "dest"](https://stackoverflow.com/questions/37126551/attributeerror-namespace-object-has-no-attribute-check)
+		- Expresiones regulares
+			- [Expresiones regulares con Python](https://relopezbriega.github.io/blog/2015/07/19/expresiones-regulares-con-python/)
+			- [Módulo re en Python: expresiones regulares](https://blog.carreralinux.com.ar/2017/07/modulo-re-en-python-regex/)
+			- [Guía de expresiones regulares en Python](https://platzi.com/blog/expresiones-regulares-python/)
+			- [Expresiones Regulares con Python - Ejemplos Prácticos](http://www.pythondiario.com/2018/06/expresiones-regulares-con-python.html)
