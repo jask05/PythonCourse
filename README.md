@@ -76,6 +76,9 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 70. Expresiones Regulares II. [Video 70](https://www.youtube.com/watch?v=V8316ao08tQ)
 71. Expresiones Regulares III. [Video 71](https://www.youtube.com/watch?v=Q4vXCQd1zwc)
 72. Expresiones Regulares IV. [Video 72](https://www.youtube.com/watch?v=u3WBRgpxQcc)
+73. Decoradores I. [Video 73](https://www.youtube.com/watch?v=DQXm6bIZgvk)
+74. Decoradores II. [Video 74](https://www.youtube.com/watch?v=_IwlE3Z7U04)
+75. Documentación. [Video 75](https://www.youtube.com/watch?v=SJqANWdRG4I)
 
 # Apuntes
 
@@ -95,7 +98,9 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 ## Vídeo 3 - Sintaxis básica I
 
 - \>>> Prompt
-- print ("Hola alumnos"); print("Adios")
+```python
+print ("Hola alumnos"); print("Adios")
+```
 - Comentarios en una línea con #
 - \ dentro de un string hace un salto de línea pero solo a nivel visual del código.
 - Identación.
@@ -130,16 +135,15 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 
 - **Condicional if**:
 
-    ```python
-    numero1=5
-    numero2=7
-    if numero1>numero2:
-        print("El numero1 es mayor")
-    else:
-        print("El numero2 es mayor")
-    ```
+```python
+numero1=5
+numero2=7
+if numero1>numero2:
+	print("El numero1 es mayor")
+else:
+	print("El numero2 es mayor")
+```
 
-    ```
 
 ## Video 5 - Sintaxis Básica III Funciones I
 - **Qué son?** 
@@ -150,14 +154,14 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 - **Utilidad**
     - Reutilización de código.
 - **Sintáxis**
-    ```python
-    def nombre_funcion(parametro) # parámetro opcional
-        # instrucción de la función
-        return # opcional
+```python
+def nombre_funcion(parametro) # parámetro opcional
+	# instrucción de la función
+	return # opcional
 
-    # Ejecución
-    nombre_funcion(parametro)
-    ```
+# Ejecución
+nombre_funcion(parametro)
+```
 
 ## Vídeo 6 - Sintaxis Básica IV Funciones II
 - Parámetros separados por coma.
@@ -232,36 +236,36 @@ lista = ["ele1", "ele2", "ele3"] * 3
     - Formatean cadenas (strings).
     - Se pueden utilizar de claves en un diccionario (las listas no).
 
-        ```python
-        tupla = ("e1", "e2", "e3")
-        # Los parámetros son opcionales, pero es recomendable ponerlos.
+```python
+tupla = ("e1", "e2", "e3")
+# Los parámetros son opcionales, pero es recomendable ponerlos.
 
-        # Acceso
-        tupla[0]
+# Acceso
+tupla[0]
 
-        # Convierte tupla en lista
-        lista = list(tupla)
+# Convierte tupla en lista
+lista = list(tupla)
 
-        # Convierte lista en tupla
-        tupla = tuple(lista)
+# Convierte lista en tupla
+tupla = tuple(lista)
 
-        # Contar cuántos elementos se encuentran dentro de una tupla
-        tupla.count(13)
+# Contar cuántos elementos se encuentran dentro de una tupla
+tupla.count(13)
 
-        # Averiguar longitud de la tupla
-        len(tupla)
+# Averiguar longitud de la tupla
+len(tupla)
 
-        # Tuplas unitarias: con un único elemento.
-        tupla = ("elemento", )
+# Tuplas unitarias: con un único elemento.
+tupla = ("elemento", )
 
-        # Empaquetado de tupla. (Tuplas sin paréntesis)
-        tupla = "e1", "e2", "e3"
+# Empaquetado de tupla. (Tuplas sin paréntesis)
+tupla = "e1", "e2", "e3"
 
-        # Desempaquetado de tupla.
-        # Permite asignar todos los elementos que forman parte de una tupla a diferentes variables
-        tupla = ("Juan", 13, 1, 1955)
-        nombre, dia, mes, anio = tupla
-        ```
+# Desempaquetado de tupla.
+# Permite asignar todos los elementos que forman parte de una tupla a diferentes variables
+tupla = ("Juan", 13, 1, 1955)
+nombre, dia, mes, anio = tupla
+```
 
 ## Video 9 - Sintaxis Básica VII Los diccionarios.
 - Estructura de datos parecida a las listas y tuplas. 
@@ -372,14 +376,13 @@ for i in range(5):
     print(f"Valor de la variable: {i}")
     # f-strings
     # Unir texto con variables.
-    # 
 ```
 
 ## Video 17 - Bucles IV. Bucle While
 - Se desconoce cuántas veces se va a ejecutar hasta que se sepa con exactitud.
 ```python
-while condicion
-# cuerpo del bucle
+while condicion:
+	# cuerpo del bucle
 ```
 
 ## Video 18 - Bucles V. Bucles: continue, pass y else
@@ -487,6 +490,7 @@ print(evaluaEdad(-18))
 
 ## Video 26 - POO III
 - El **self** dentro de un método se "traduce" como el nombre de la variable con la que se instancia la clase.
+
 ```python
 class Coche():
     enmarcha = Flase
@@ -496,14 +500,16 @@ class Coche():
 
 miCoche = Coche()
 miCoche.arrancar() # True // Traducción: miCoche.enmarcha = Ture
-    ```
+```
 
 ## Video 27 - POO IV
 - **Constructor**: método especial que le da estado inicial a los objetos. Forma de especificar claramente cual va a ser el estado inicial de los objetos que pertenezcan a una clase.
 - **Encapsulación:** protege una propiedad para que no se pueda modificar desde fuera de la clase. Para ello se pone dos guiones bajos en el nombre de la variable. **IMPORTANTE**: cuando se usa la variable hay que poner los dos guiones bajos. Si se llama a la variable como "ruedas" en vez de "__ruedas" estaríamos hablando de dods variables diferentes.
+
 ```python
 self.__ruedas = 4
 ```
+
 ## Video 28 - POO V
 - **Encapsulación de métodos:** igual que con las variables, utilizando guión bajo. Se deben encapsular cuando el objeto o la clase así lo necesite. Depende del comportamiento que se busque que tenga según el propio criterio del desarrollo.
 
@@ -559,9 +565,11 @@ self.__ruedas = 4
 - Se pueden enviar por correo o subirlos a una plataforma.
 - Se instala el paquete dentro de Python del SO.
 - Hay que crear en la raíz un fichero **setup.py**.
+
 ```python
 python3 setup.py sdist
 ```
+
 - Ejecutado el comando debe crear una carpeta denominada **<nombre>.egg-info** y **dist**.
 - Para instalar ir al directorio **dist** y utilizar la instrucción: **pip3 install <nombre-paquete>.tar.gz**
 - Cuando se desea usar el paquete se debe poner tanto el **from** como el **import**. La ventaja es que ya no necesitará una ruta absoluta o mantener el fichero en el mismo directorio, como se ha instalado con **pip** solo es necesario hacer la llamada pertinente.
@@ -618,10 +626,10 @@ python3 setup.py sdist
 ## Video 44 - Interfaces gráficas III - Labels
 - Labels: permiten mostrar texto con el cual no se puede interactuar.
     - Pueden mostrar imagenes.
+
 ```python
 variableLabel = Label(contenedor,opciones)
 ```
-
 ## Video 45 - Interfaces gráficas VI - Cuadro de texto
 - Widget entry: cuadro de texto.
 - Método grid: construye una tabla para colocar el contenido de forma ordenada.
@@ -652,6 +660,7 @@ variableLabel = Label(contenedor,opciones)
 # Video 53 - Interfaces gráficas XII - Ventanas emergentes
 - Ventanas emergentes
     - Hay que importarlas de forma independiente
+
 ```python
 from tkinter import messagebox
 ```
@@ -769,6 +778,28 @@ from tkinter import messagebox
 	- **Comodines**
 		- **Punto .**: sustituye a un único caracter.
 		- **\d**: si la cadena comienza (o no) por un número.
+
+# Video 73 - Decoradores I
+- **¿Qué son?**: funciones que a su vez añaden funcionalidades (decoran) a otras funciones que ya existan en el programa (les añaden funcionalidades).
+- **Estructura**
+	- Son 3 funciones (A, B y C), donde A recibe parámetro a B para devolver C. 
+	- Devuelve una función.
+- **Sintáxis**:
+```python
+# Función A + parámetro función B
+def funcion_decorador(funcion): 
+	def funcion_interna(): # Función C
+		# código de la función interna
+	return funcion_interna
+```
+
+# Video 74 - Decoradores II
+- Decoradores con parámetros.
+- **Nota:**
+	- *args: Se le dice a una función de Python que recibirá un nº indeterminado de parámetros.
+	- **kwargs (keyword arguments): parámetros con clave-valor
+
+# Video 75 - Documentación
 
 # Notas
 
