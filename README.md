@@ -79,6 +79,8 @@ Curso de Python - [Píldoras informáticas](https://www.youtube.com/watch?v=G2FC
 73. Decoradores I. [Video 73](https://www.youtube.com/watch?v=DQXm6bIZgvk)
 74. Decoradores II. [Video 74](https://www.youtube.com/watch?v=_IwlE3Z7U04)
 75. Documentación. [Video 75](https://www.youtube.com/watch?v=SJqANWdRG4I)
+76. Documentación y pruebas. [Video 76](https://www.youtube.com/watch?v=BUNEkSFlmys)
+77. Documentación y pruebas II. [Video 77](https://www.youtube.com/watch?v=64v9X7K-iuc)
 
 # Apuntes
 
@@ -800,6 +802,14 @@ def funcion_decorador(funcion):
 	- **kwargs (keyword arguments): parámetros con clave-valor
 
 # Video 75 - Documentación
+- Documentar programas.
+- **¿Qué es?**: incluir comentarios en clases, módulos, métodos, etc.
+- **¿Para qué?**: para ayudar en el trabajo en equipo. Especialmente útil en aplicaciones complejas.
+
+# Video 76 - Documentación y pruebas
+- Utilizar la documentación para realizar pruebas: **módulo doctest**
+
+# Video 77 - Documentación y pruebas II
 
 # Notas
 
