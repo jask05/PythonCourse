@@ -807,9 +807,21 @@ def funcion_decorador(funcion):
 - **¿Para qué?**: para ayudar en el trabajo en equipo. Especialmente útil en aplicaciones complejas.
 
 # Video 76 - Documentación y pruebas
-- Utilizar la documentación para realizar pruebas: **módulo doctest**
+- Utilizar la documentación para realizar pruebas: módulo **doctest**.
 
 # Video 77 - Documentación y pruebas II
+- Ampliación de la utilización del módulo **doctest**.
+- Utilizando 3 puntos (...) se le dice en el comentario de pruebas que la siguiente expresión es una expresión anidada que pertenece al código anterior.
+- Se pueden contemplar posibles errores a la hora de realizar pruebas.
+
+# Video 78 - Generar ejecutable. Fin del curso.
+- Necesita **pyinstaller**.
+- pip3 install pyinstaller
+- Ir al directorio donde está el fichero .py que se quiere convertir.
+	- pyinstaller <nombre>.py [ --windowed ] [ --onefile ]
+		- **--windowed**: para que no aparezca la consola en Windows.
+		- **--onefile**: para que se compile en un solo programa y se pueda ejecutar en cualquier ordenador.
+- [Más información](https://pyinstaller.readthedocs.io/en/stable/usage.html)
 
 # Notas
 
