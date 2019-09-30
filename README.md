@@ -901,3 +901,4 @@ if args.performance:
 			- [Módulo re en Python: expresiones regulares](https://blog.carreralinux.com.ar/2017/07/modulo-re-en-python-regex/)
 			- [Guía de expresiones regulares en Python](https://platzi.com/blog/expresiones-regulares-python/)
 			- [Expresiones Regulares con Python - Ejemplos Prácticos](http://www.pythondiario.com/2018/06/expresiones-regulares-con-python.html)
+			- [Máster Fictizia](https://github.com/Fictizia/Master-en-Programacion-con-Python_ed1)
